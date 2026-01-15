@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/SWKdUZlNbaxY8SGurUAkXi/8d2QpbNm/cbrgxa+yPU=",
+  "Hash": "/BqfnTLNJip+FtgjllFILNsGPjqA8jCUE3RCjrWoM2M=",
   "Source": "ElorMAUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "su3o3czkzx",
-      "Integrity": "hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE=",
+      "Fingerprint": "0fs8ts3djo",
+      "Integrity": "JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\ElorMAUI.styles.css"
@@ -52,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "su3o3czkzx",
-      "Integrity": "hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE=",
+      "Fingerprint": "0fs8ts3djo",
+      "Integrity": "JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css"
@@ -412,6 +412,96 @@
       ]
     },
     {
+      "Route": "ElorMAUI.0fs8ts3djo.bundle.scp.css",
+      "AssetFile": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 Jan 2026 08:56:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0fs8ts3djo"
+        },
+        {
+          "Name": "label",
+          "Value": "ElorMAUI.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="
+        }
+      ]
+    },
+    {
+      "Route": "ElorMAUI.0fs8ts3djo.styles.css",
+      "AssetFile": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\ElorMAUI.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1796"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 15 Jan 2026 08:56:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0fs8ts3djo"
+        },
+        {
+          "Name": "label",
+          "Value": "ElorMAUI.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="
+        }
+      ]
+    },
+    {
       "Route": "ElorMAUI.bundle.scp.css",
       "AssetFile": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css",
       "Selectors": [],
@@ -422,7 +512,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5481"
+          "Value": "1796"
         },
         {
           "Name": "Content-Type",
@@ -430,11 +520,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE=\""
+          "Value": "\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 Jan 2026 08:35:26 GMT"
+          "Value": "Thu, 15 Jan 2026 08:56:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -444,7 +534,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE="
+          "Value": "sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="
         }
       ]
     },
@@ -459,7 +549,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5481"
+          "Value": "1796"
         },
         {
           "Name": "Content-Type",
@@ -467,11 +557,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE=\""
+          "Value": "\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 15 Jan 2026 08:35:26 GMT"
+          "Value": "Thu, 15 Jan 2026 08:56:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -481,97 +571,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE="
-        }
-      ]
-    },
-    {
-      "Route": "ElorMAUI.su3o3czkzx.bundle.scp.css",
-      "AssetFile": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5481"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 Jan 2026 08:35:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "su3o3czkzx"
-        },
-        {
-          "Name": "label",
-          "Value": "ElorMAUI.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE="
-        }
-      ]
-    },
-    {
-      "Route": "ElorMAUI.su3o3czkzx.styles.css",
-      "AssetFile": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\ElorMAUI.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5481"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 15 Jan 2026 08:35:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "su3o3czkzx"
-        },
-        {
-          "Name": "label",
-          "Value": "ElorMAUI.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE="
+          "Value": "sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="
         }
       ]
     },

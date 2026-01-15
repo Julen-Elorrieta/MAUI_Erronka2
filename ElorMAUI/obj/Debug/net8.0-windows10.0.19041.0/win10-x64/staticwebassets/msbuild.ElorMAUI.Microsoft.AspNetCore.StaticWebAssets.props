@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName>ScopedCss</AssetTraitName>
       <AssetTraitValue>ApplicationBundle</AssetTraitValue>
-      <Fingerprint>su3o3czkzx</Fingerprint>
-      <Integrity>hOxw7AWaB9df1Gbk3jk72x0Vp/IiUB46E+Lb1Af7VQE=</Integrity>
+      <Fingerprint>0fs8ts3djo</Fingerprint>
+      <Integrity>JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ElorMAUI.styles.css'))</OriginalItemSpec>
