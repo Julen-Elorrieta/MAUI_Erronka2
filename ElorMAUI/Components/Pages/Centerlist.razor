@@ -1,7 +1,63 @@
 ﻿@page "/centerlist"
+@inject HttpClient Http
+@using ElorMAUI.Components.Model
+@using System.Text.Json.Serialization
 
-<h1>Center list</h1>
+<h1>Lista de Centros</h1>
+
+@if (errorContent != null)
+{
+        <p style="color:red;">Error: @errorContent</p>
+}
+else if (centros == null)
+{
+        <p>Cargando...</p>
+}
+else if (!centros.Any())
+{
+        <p>No hay centros disponibles.</p>
+}
+else
+{
+        <ul>
+        @foreach (var centro in centros)
+        {
+                    <li>@centro.NOM</li>
+        }
+        </ul>
+}
 
 @code {
-    
+    private List<Centro> centros;
+    private string errorContent;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var response = await Http.GetAsync("http://localhost:8080/getCenterList");
+            var content = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode || string.IsNullOrWhiteSpace(content) || content.TrimStart().StartsWith("<"))
+            {
+                errorContent = content;
+                centros = new List<Centro>();
+                return;
+            }
+
+            var root = System.Text.Json.JsonSerializer.Deserialize<CentrosRoot>(content);
+            centros = root?.CENTROS ?? new List<Centro>();
+        }
+        catch (Exception ex)
+        {
+            errorContent = ex.Message;
+            centros = new List<Centro>();
+        }
+    }
+
+    public class CentrosRoot
+    {
+        [JsonPropertyName("CENTROS")]
+        public List<Centro> CENTROS { get; set; }
+    }
 }

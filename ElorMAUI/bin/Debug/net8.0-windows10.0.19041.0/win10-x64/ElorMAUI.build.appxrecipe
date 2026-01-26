@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.companyname.elormaui</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
@@ -34,25 +34,25 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ElorMAUI.dll">
       <PackagePath>ElorMAUI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ElorMAUI.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\css\app.css">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\wwwroot\css\app.css">
       <PackagePath>wwwroot\css\app.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\css\bootstrap\bootstrap.min.css">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\wwwroot\css\bootstrap\bootstrap.min.css">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\css\bootstrap\bootstrap.min.css.map">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\wwwroot\css\bootstrap\bootstrap.min.css.map">
       <PackagePath>wwwroot\css\bootstrap\bootstrap.min.css.map</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\favicon.png">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\wwwroot\favicon.png">
       <PackagePath>wwwroot\favicon.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\index.html">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
@@ -520,10 +520,10 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.core\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\ElorMAUI.styles.css">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\ElorMAUI.styles.css">
       <PackagePath>wwwroot\ElorMAUI.styles.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\ElorMAUI.bundle.scp.css">
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\projectbundle\ElorMAUI.bundle.scp.css">
       <PackagePath>wwwroot\ElorMAUI.0fs8ts3djo.bundle.scp.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\source\repos\MAUI_Erronka2\ElorMAUI\Components\Layout\MainLayout.razor.css">
