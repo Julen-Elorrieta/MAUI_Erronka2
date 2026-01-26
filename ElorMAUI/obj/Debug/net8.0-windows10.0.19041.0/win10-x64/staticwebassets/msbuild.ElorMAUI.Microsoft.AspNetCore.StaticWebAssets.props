@@ -16,6 +16,8 @@
       <Integrity>K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>3339</FileLength>
+      <LastWriteTime>Mon, 26 Jan 2026 08:11:01 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\app.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css'))">
@@ -34,6 +36,8 @@
       <Integrity>SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>162726</FileLength>
+      <LastWriteTime>Mon, 26 Jan 2026 08:11:01 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css.map'))">
@@ -52,6 +56,8 @@
       <Integrity>gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>449111</FileLength>
+      <LastWriteTime>Mon, 26 Jan 2026 08:11:01 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\bootstrap\bootstrap.min.css.map'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ElorMAUI.styles.css'))">
@@ -70,6 +76,8 @@
       <Integrity>JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>1796</FileLength>
+      <LastWriteTime>Mon, 26 Jan 2026 08:11:01 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\ElorMAUI.styles.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))">
@@ -88,6 +96,8 @@
       <Integrity>4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>1148</FileLength>
+      <LastWriteTime>Mon, 26 Jan 2026 08:11:01 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))">
@@ -106,6 +116,8 @@
       <Integrity>RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <FileLength>873</FileLength>
+      <LastWriteTime>Mon, 26 Jan 2026 08:11:01 GMT</LastWriteTime>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\index.html'))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
