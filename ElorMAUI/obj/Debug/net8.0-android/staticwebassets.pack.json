@@ -1,6 +1,7 @@
 {
   "Files": [
     {
+<<<<<<< HEAD
       "Id": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ElorMAUI.styles.css",
       "PackagePath": "staticwebassets\\ElorMAUI.styles.css"
     },
@@ -22,6 +23,29 @@
     },
     {
       "Id": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
+=======
+      "Id": "C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ElorMAUI.styles.css",
+      "PackagePath": "staticwebassets\\ElorMAUI.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
+>>>>>>> 3631464b63a50ba9bd699f67bbd6b03fc007b84c
       "PackagePath": "staticwebassets\\index.html"
     },
     {
