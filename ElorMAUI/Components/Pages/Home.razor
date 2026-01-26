@@ -1,6 +1,9 @@
 ﻿@page "/"
 @using System.ComponentModel.DataAnnotations
+@using System.Text.Json.Serialization
 @inject NavigationManager NavigationManager
+@inject HttpClient Http
+
 
 <div class="main-container">
     <div class="login-card">
@@ -9,11 +12,11 @@
             <DataAnnotationsValidator />
             <ValidationSummary />
             <div class="form-group">
-                <label for="username">Username:</label>
-                <InputText id="username" class="input" @bind-Value="loginModel.Username" />
+                <label for="email">Correo:</label>
+                <InputText id="email" class="input" @bind-Value="loginModel.Email" />
             </div>
             <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password">Contraseña:</label>
                 <InputText id="password" type="password" class="input" @bind-Value="loginModel.Password" />
             </div>
             <button type="submit" class="btn">Login</button>
@@ -33,6 +36,7 @@
         min-height: 80vh;
         background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
     }
+
     .login-card {
         background: #fff;
         padding: 2rem 2.5rem;
@@ -41,20 +45,24 @@
         min-width: 320px;
         max-width: 360px;
     }
-    .login-card h2 {
-        text-align: center;
-        margin-bottom: 1.5rem;
-        color: #3b82f6;
-    }
+
+        .login-card h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #3b82f6;
+        }
+
     .form-group {
         margin-bottom: 1.2rem;
     }
+
     label {
         display: block;
         margin-bottom: 0.4rem;
         font-weight: 500;
         color: #374151;
     }
+
     .input {
         width: 100%;
         padding: 0.5rem;
@@ -64,10 +72,12 @@
         background: #f9fafb;
         transition: border-color 0.2s;
     }
-    .input:focus {
-        border-color: #3b82f6;
-        outline: none;
-    }
+
+        .input:focus {
+            border-color: #3b82f6;
+            outline: none;
+        }
+
     .btn {
         width: 100%;
         padding: 0.7rem;
@@ -80,9 +90,11 @@
         cursor: pointer;
         transition: background 0.2s;
     }
-    .btn:hover {
-        background: #2563eb;
-    }
+
+        .btn:hover {
+            background: #2563eb;
+        }
+
     .login-message {
         margin-top: 1rem;
         text-align: center;
@@ -92,25 +104,34 @@
 </style>
 
 @code {
-    private LoginModel loginModel = new LoginModel();
+    private LoginModel loginModel = new();
     private string loginMessage;
-    private void HandleValidSubmit()
+
+    private async Task HandleValidSubmit()
     {
-        // Simple authentication logic for demonstration purposes
-        if (loginModel.Username == "admin" && loginModel.Password == "password")
+        loginMessage = null;
+        try
         {
-            NavigationManager.NavigateTo("/centerlist");
+            var response = await Http.PostAsJsonAsync("http://localhost:8080/login", loginModel);
+            if (response.IsSuccessStatusCode)
+                NavigationManager.NavigateTo("/centerlist");
+            else
+                loginMessage = await response.Content.ReadAsStringAsync();
         }
-        else
+        catch (Exception ex)
         {
-            loginMessage = "Invalid username or password.";
+            loginMessage = $"Error: {ex.Message}";
         }
     }
+
     public class LoginModel
     {
         [Required]
-        public string Username { get; set; }
+        [EmailAddress]
+        [JsonPropertyName("email")]
+        public string Email { get; set; }
         [Required]
+        [JsonPropertyName("password")]
         public string Password { get; set; }
     }
 }

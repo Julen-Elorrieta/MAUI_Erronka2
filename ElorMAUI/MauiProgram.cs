@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ElorMAUI
 {
@@ -16,9 +17,21 @@ namespace ElorMAUI
 
             builder.Services.AddMauiBlazorWebView();
 
+            var backendUrl = "http://localhost:8080";
+
+            // Cliente con nombre
+            builder.Services.AddHttpClient("BackendApi", client =>
+            {
+                client.BaseAddress = new Uri(backendUrl);
+            });
+
+            // Cliente predeterminado para inyección directa
+            builder.Services.AddScoped(sp =>
+                sp.GetRequiredService<IHttpClientFactory>().CreateClient("BackendApi"));
+
 #if DEBUG
-    		builder.Services.AddBlazorWebViewDeveloperTools();
-    		builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

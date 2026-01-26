@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {}
+    "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {
+    "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
+        "projectUniqueName": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
         "projectName": "ElorMAUI",
-        "projectPath": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
-        "packagesPath": "C:\\Users\\in1dm3-d\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\in1dm3-d\\Desktop\\Kerman\\maui\\MAUI_Erronka2\\ElorMAUI\\obj\\",
+        "projectPath": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
+        "packagesPath": "C:\\Users\\in2dm3-d\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\in1dm3-d\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\in2dm3-d\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -70,6 +70,10 @@
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.83, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[10.0.2, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -140,6 +144,10 @@
               "target": "Package",
               "version": "[8.0.83, )"
             },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[8.0.1, )"
@@ -196,6 +204,10 @@
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.83, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[10.0.2, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
@@ -254,6 +266,10 @@
             "Microsoft.AspNetCore.Components.WebView.Maui": {
               "target": "Package",
               "version": "[8.0.83, )"
+            },
+            "Microsoft.Extensions.Http": {
+              "target": "Package",
+              "version": "[10.0.2, )"
             },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
