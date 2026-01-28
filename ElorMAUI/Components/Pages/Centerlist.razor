@@ -1,5 +1,6 @@
 ﻿@page "/centerlist"
 @inject ElorMAUI.Services.IkastetxeService servicio
+@inject NavigationManager Navigation
 @using ElorMAUI.Components.Model
 
 <h1>Lista de Centros</h1>
@@ -14,15 +15,34 @@ else if (!servicio.Centros.Any())
 }
 else
 {
-        <ul>
-        @foreach (var c in CentrosPaginados)
-        {
-                <li>
-                @c.NOM - @c.DOMI
-                    <!-- Puedes añadir más campos aquí si lo deseas -->
-                </li>
-        }
-        </ul>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Municipio</th>
+                    <th>Teléfono</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            @foreach (var c in CentrosPaginados)
+            {
+                    <tr>
+                        <td>@c.NOM</td>
+                        <td>@c.DOMI</td>
+                        <td>@c.DMUNIC</td>
+                        <td>@c.TEL1</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary"
+                                    @onclick="() => VerDetalle(c.CCEN)">
+                                Ver detalles
+                            </button>
+                        </td>
+                    </tr>
+            }
+            </tbody>
+        </table>
 
         <div class="d-flex justify-content-center align-items-center mt-3">
             <button class="btn btn-sm btn-secondary me-2"
@@ -56,34 +76,31 @@ else
 }
 
 @code {
-    private int pageSize = 20;
+    private int pageSize = 10;
     private int currentPage = 1;
 
     protected override async Task OnInitializedAsync()
     {
-            try
-            {
-                using var stream = await FileSystem.OpenAppPackageFileAsync("ikastetxeak.json");
-                using var reader = new StreamReader(stream);
-                var json = await reader.ReadToEndAsync();
+        try
+        {
+            using var stream = await FileSystem.OpenAppPackageFileAsync("ikastetxeak.json");
+            using var reader = new StreamReader(stream);
+            var json = await reader.ReadToEndAsync();
 
-                // Comprobación básica: ¿empieza por '['?
-                if (!string.IsNullOrWhiteSpace(json) && json.TrimStart().StartsWith("["))
-                {
-                    servicio.Centros = System.Text.Json.JsonSerializer.Deserialize<List<Centro>>(json) ?? new List<Centro>();
-                }
-                else
-                {
-                    servicio.Centros = new List<Centro>();
-                }
+            if (!string.IsNullOrWhiteSpace(json) && json.TrimStart().StartsWith("["))
+            {
+                servicio.Centros = System.Text.Json.JsonSerializer.Deserialize<List<Centro>>(json) ?? new List<Centro>();
             }
-            catch
+            else
             {
                 servicio.Centros = new List<Centro>();
             }
-        
+        }
+        catch
+        {
+            servicio.Centros = new List<Centro>();
+        }
     }
-
 
     private IEnumerable<Centro> CentrosPaginados =>
         servicio.Centros.Skip((currentPage - 1) * pageSize).Take(pageSize);
@@ -94,5 +111,11 @@ else
     {
         if (page >= 1 && page <= TotalPages)
             currentPage = page;
+    }
+
+    private void VerDetalle(int? ccen)
+    {
+        if (ccen.HasValue)
+            Navigation.NavigateTo($"/centro/{ccen.Value}");
     }
 }
