@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {}
+    "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {
+    "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
+        "projectUniqueName": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
         "projectName": "ElorMAUI",
-        "projectPath": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
+        "projectPath": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
         "packagesPath": "C:\\Users\\in2dm3-d\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\obj\\",
         "projectStyle": "PackageReference",

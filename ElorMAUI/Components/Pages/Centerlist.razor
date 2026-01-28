@@ -1,63 +1,98 @@
 ﻿@page "/centerlist"
-@inject HttpClient Http
+@inject ElorMAUI.Services.IkastetxeService servicio
 @using ElorMAUI.Components.Model
-@using System.Text.Json.Serialization
 
 <h1>Lista de Centros</h1>
 
-@if (errorContent != null)
-{
-        <p style="color:red;">Error: @errorContent</p>
-}
-else if (centros == null)
+@if (servicio.Centros == null)
 {
         <p>Cargando...</p>
 }
-else if (!centros.Any())
+else if (!servicio.Centros.Any())
 {
         <p>No hay centros disponibles.</p>
 }
 else
 {
         <ul>
-        @foreach (var centro in centros)
+        @foreach (var c in CentrosPaginados)
         {
-                    <li>@centro.NOM</li>
+                <li>
+                @c.NOM - @c.DOMI
+                    <!-- Puedes añadir más campos aquí si lo deseas -->
+                </li>
         }
         </ul>
+
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <button class="btn btn-sm btn-secondary me-2"
+                    @onclick="@(() => SetPage(1))"
+                    disabled="@(currentPage == 1)">
+                Primero
+            </button>
+
+            <button class="btn btn-sm btn-secondary me-2"
+                    @onclick="@(() => SetPage(currentPage - 1))"
+                    disabled="@(currentPage == 1)">
+                Anterior
+            </button>
+
+            <span class="mx-3">
+                Página @currentPage de @TotalPages
+            </span>
+
+            <button class="btn btn-sm btn-secondary ms-2"
+                    @onclick="@(() => SetPage(currentPage + 1))"
+                    disabled="@(currentPage == TotalPages)">
+                Siguiente
+            </button>
+
+            <button class="btn btn-sm btn-secondary ms-2"
+                    @onclick="@(() => SetPage(TotalPages))"
+                    disabled="@(currentPage == TotalPages)">
+                Último
+            </button>
+        </div>
 }
 
 @code {
-    private List<Centro> centros;
-    private string errorContent;
+    private int pageSize = 20;
+    private int currentPage = 1;
 
     protected override async Task OnInitializedAsync()
     {
-        try
-        {
-            var response = await Http.GetAsync("http://localhost:8080/getCenterList");
-            var content = await response.Content.ReadAsStringAsync();
-
-            if (!response.IsSuccessStatusCode || string.IsNullOrWhiteSpace(content) || content.TrimStart().StartsWith("<"))
+            try
             {
-                errorContent = content;
-                centros = new List<Centro>();
-                return;
-            }
+                using var stream = await FileSystem.OpenAppPackageFileAsync("ikastetxeak.json");
+                using var reader = new StreamReader(stream);
+                var json = await reader.ReadToEndAsync();
 
-            var root = System.Text.Json.JsonSerializer.Deserialize<CentrosRoot>(content);
-            centros = root?.CENTROS ?? new List<Centro>();
-        }
-        catch (Exception ex)
-        {
-            errorContent = ex.Message;
-            centros = new List<Centro>();
-        }
+                // Comprobación básica: ¿empieza por '['?
+                if (!string.IsNullOrWhiteSpace(json) && json.TrimStart().StartsWith("["))
+                {
+                    servicio.Centros = System.Text.Json.JsonSerializer.Deserialize<List<Centro>>(json) ?? new List<Centro>();
+                }
+                else
+                {
+                    servicio.Centros = new List<Centro>();
+                }
+            }
+            catch
+            {
+                servicio.Centros = new List<Centro>();
+            }
+        
     }
 
-    public class CentrosRoot
+
+    private IEnumerable<Centro> CentrosPaginados =>
+        servicio.Centros.Skip((currentPage - 1) * pageSize).Take(pageSize);
+
+    private int TotalPages => (int)Math.Ceiling((double)servicio.Centros.Count / pageSize);
+
+    private void SetPage(int page)
     {
-        [JsonPropertyName("CENTROS")]
-        public List<Centro> CENTROS { get; set; }
+        if (page >= 1 && page <= TotalPages)
+            currentPage = page;
     }
 }

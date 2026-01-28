@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
+using ElorMAUI.Services;
 
 namespace ElorMAUI
 {
@@ -33,6 +34,7 @@ namespace ElorMAUI
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
 #endif
+            builder.Services.AddSingleton<ElorMAUI.Services.IkastetxeService>();
 
             return builder.Build();
         }

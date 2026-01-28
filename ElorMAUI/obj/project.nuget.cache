@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4q/+w41mxj0=",
+  "dgSpecHash": "4iMo99ItslQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
+  "projectFilePath": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\googlegson\\2.10.1.4\\googlegson.2.10.1.4.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.10\\microsoft.aspnetcore.authorization.8.0.10.nupkg.sha512",
