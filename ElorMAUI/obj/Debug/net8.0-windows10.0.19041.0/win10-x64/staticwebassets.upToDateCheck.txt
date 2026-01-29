@@ -2,5 +2,6 @@ wwwroot\css\app.css
 wwwroot\css\bootstrap\bootstrap.min.css
 wwwroot\css\bootstrap\bootstrap.min.css.map
 wwwroot\favicon.png
+wwwroot\img\EEM-logo-color.svg
 wwwroot\index.html
 wwwroot\map.js

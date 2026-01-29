@@ -450,6 +450,88 @@
       ]
     },
     {
+      "Route": "img/EEM-logo-color.0ychx4eo3z.svg",
+      "AssetFile": "img/EEM-logo-color.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 11:34:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ychx4eo3z"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM="
+        },
+        {
+          "Name": "label",
+          "Value": "img/EEM-logo-color.svg"
+        }
+      ]
+    },
+    {
+      "Route": "img/EEM-logo-color.svg",
+      "AssetFile": "img/EEM-logo-color.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 11:34:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM="
+        }
+      ]
+    },
+    {
       "Route": "index.html",
       "AssetFile": "index.html",
       "Selectors": [],

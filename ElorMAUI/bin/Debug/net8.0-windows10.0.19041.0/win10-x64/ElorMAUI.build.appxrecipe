@@ -55,6 +55,9 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\favicon.png">
       <PackagePath>wwwroot\favicon.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\img\EEM-logo-color.svg">
+      <PackagePath>wwwroot\img\EEM-logo-color.svg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
     </AppxPackagedFile>

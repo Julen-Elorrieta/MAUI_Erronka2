@@ -7,6 +7,8 @@
 
 <div class="main-container">
     <div class="login-card">
+        <img src="img/EEM-Logo-color.svg" alt="Logo de Elorreita Errekamari" class="login-logo" />
+        <h2>Login</h2>
         <h2>Login</h2>
         <EditForm Model="@loginModel" OnValidSubmit="HandleValidSubmit">
             <DataAnnotationsValidator />
@@ -33,8 +35,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 80vh;
+        height: 100vh; /* Cambiado de min-height: 80vh; */
         background: linear-gradient(135deg, #e0e7ff 0%, #f3f4f6 100%);
+    }
+
+    .login-logo {
+        display: block;
+        margin: 0 auto 1.5rem auto;
+        max-width: 120px;
+        height: auto;
     }
 
     .login-card {

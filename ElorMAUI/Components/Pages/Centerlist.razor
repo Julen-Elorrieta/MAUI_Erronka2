@@ -7,83 +7,160 @@
 
 @if (servicio.Centros == null || !servicio.Centros.Any())
 {
-        <p>Cargando...</p>
+    <p>Cargando...</p>
 }
 else
 {
-        <table class="table table-striped table-bordered">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Dirección</th>
-                    <th>Municipio</th>
-                    <th>Teléfono</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-            @foreach (var c in CentrosPaginados)
-            {
-                    <tr>
-                        <td>@c.NOM</td>
-                        <td>@c.DOMI</td>
-                        <td>@c.DMUNIC</td>
-                        <td>@c.TEL1</td>
-                        <td>
-                            <button class="btn btn-sm btn-primary"
-                                    @onclick="() => VerDetalle(c.CCEN)">
-                                Ver detalles
-                            </button>
-                        </td>
-                    </tr>
-            }
-            </tbody>
-        </table>
-
-        <div class="d-flex justify-content-center align-items-center mt-3">
-            <button class="btn btn-sm btn-secondary me-2"
-                    @onclick="@(() => SetPage(1))"
-                    disabled="@(currentPage == 1)">
-                Primero
-            </button>
-
-            <button class="btn btn-sm btn-secondary me-2"
-                    @onclick="@(() => SetPage(currentPage - 1))"
-                    disabled="@(currentPage == 1)">
-                Anterior
-            </button>
-
-            <span class="mx-3">
-                Página @currentPage de @TotalPages
-            </span>
-
-            <button class="btn btn-sm btn-secondary ms-2"
-                    @onclick="@(() => SetPage(currentPage + 1))"
-                    disabled="@(currentPage == TotalPages)">
-                Siguiente
-            </button>
-
-            <button class="btn btn-sm btn-secondary ms-2"
-                    @onclick="@(() => SetPage(TotalPages))"
-                    disabled="@(currentPage == TotalPages)">
-                Último
-            </button>
+    <div class="row mb-3">
+        <div class="col">
+            <label>Tipo de centro</label>
+            <select class="form-select" @bind="selectedTituc">
+                <option value="">Todos</option>
+                @foreach (var t in TitucOptions)
+                {
+                    <option value="@t">@t</option>
+                }
+            </select>
         </div>
+        <div class="col">
+            <label>Territorio</label>
+            <select class="form-select" @bind="selectedTerre">
+                <option value="">Todos</option>
+                @foreach (var t in TerreOptions)
+                {
+                    <option value="@t">@t</option>
+                }
+            </select>
+        </div>
+        <div class="col">
+            <label>Municipio</label>
+            <select class="form-select" @bind="selectedMunic">
+                <option value="">Todos</option>
+                @foreach (var m in MunicOptions)
+                {
+                    <option value="@m">@m</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <p class="mt-2">
+        Mostrando @TotalCentros centros
+    </p>
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Municipio</th>
+                <th>Teléfono</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var c in CentrosPaginados)
+        {
+            <tr>
+                <td>@c.NOM</td>
+                <td>@c.DOMI</td>
+                <td>@c.DMUNIC</td>
+                <td>@c.TEL1</td>
+                <td>
+                    <button class="btn btn-sm btn-primary"
+                            @onclick="() => VerDetalle(c.CCEN)">
+                        Ver detalles
+                    </button>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    <div class="d-flex justify-content-center align-items-center mt-3">
+        <button class="btn btn-sm btn-secondary me-2"
+                @onclick="@(() => SetPage(1))"
+                disabled="@(currentPage == 1)">
+            Primero
+        </button>
+
+        <button class="btn btn-sm btn-secondary me-2"
+                @onclick="@(() => SetPage(currentPage - 1))"
+                disabled="@(currentPage == 1)">
+            Anterior
+        </button>
+
+        <span class="mx-3">
+            Página @currentPage de @TotalPages
+        </span>
+
+        <button class="btn btn-sm btn-secondary ms-2"
+                @onclick="@(() => SetPage(currentPage + 1))"
+                disabled="@(currentPage == TotalPages)">
+            Siguiente
+        </button>
+
+        <button class="btn btn-sm btn-secondary ms-2"
+                @onclick="@(() => SetPage(TotalPages))"
+                disabled="@(currentPage == TotalPages)">
+            Último
+        </button>
+    </div>
 }
 
 @code {
     private int pageSize = 10;
     private int currentPage = 1;
+    private string? selectedTituc;
+    private string? selectedTerre;
+    private string? selectedMunic;
 
     protected override async Task OnInitializedAsync()
     {
         await servicio.LoadCentrosAsync();
     }
 
-    private IEnumerable<Centro> CentrosPaginados =>
-        servicio.Centros.Skip((currentPage - 1) * pageSize).Take(pageSize);
+    // Opciones para los selectores encadenados
+    private IEnumerable<string> TitucOptions =>
+        servicio.Centros
+            .Select(c => c.DTITUC)
+            .Where(s => !string.IsNullOrWhiteSpace(s))
+            .Distinct()
+            .OrderBy(s => s);
 
-    private int TotalPages => (int)Math.Ceiling((double)servicio.Centros.Count / pageSize);
+    private IEnumerable<string> TerreOptions =>
+        servicio.Centros
+            .Where(c => string.IsNullOrEmpty(selectedTituc) || c.DTITUC == selectedTituc)
+            .Select(c => c.DTERRC)
+            .Where(s => !string.IsNullOrWhiteSpace(s))
+            .Distinct()
+            .OrderBy(s => s);
+
+    private IEnumerable<string> MunicOptions =>
+        servicio.Centros
+            .Where(c =>
+                (string.IsNullOrEmpty(selectedTituc) || c.DTITUC == selectedTituc) &&
+                (string.IsNullOrEmpty(selectedTerre) || c.DTERRC == selectedTerre)
+            )
+            .Select(c => c.DMUNIC)
+            .Where(s => !string.IsNullOrWhiteSpace(s))
+            .Distinct()
+            .OrderBy(s => s);
+
+    // Lista filtrada según los selectores
+    private IEnumerable<Centro> CentrosFiltrados =>
+        servicio.Centros
+            .Where(c =>
+                (string.IsNullOrEmpty(selectedTituc) || c.DTITUC == selectedTituc) &&
+                (string.IsNullOrEmpty(selectedTerre) || c.DTERRC == selectedTerre) &&
+                (string.IsNullOrEmpty(selectedMunic) || c.DMUNIC == selectedMunic)
+            );
+
+    // Paginación sobre la lista filtrada
+    private IEnumerable<Centro> CentrosPaginados =>
+        CentrosFiltrados.Skip((currentPage - 1) * pageSize).Take(pageSize);
+
+    private int TotalCentros => CentrosFiltrados.Count();
+    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)TotalCentros / pageSize));
 
     private void SetPage(int page)
     {
@@ -95,5 +172,27 @@ else
     {
         if (ccen.HasValue)
             Navigation.NavigateTo($"/center/{ccen.Value}");
+    }
+
+    // Métodos para limpiar selects dependientes y reiniciar página
+    private void OnTitucChanged(ChangeEventArgs e)
+    {
+        selectedTituc = e.Value?.ToString();
+        selectedTerre = null;
+        selectedMunic = null;
+        currentPage = 1;
+    }
+
+    private void OnTerreChanged(ChangeEventArgs e)
+    {
+        selectedTerre = e.Value?.ToString();
+        selectedMunic = null;
+        currentPage = 1;
+    }
+
+    private void OnMuniChanged(ChangeEventArgs e)
+    {
+        selectedMunic = e.Value?.ToString();
+        currentPage = 1;
     }
 }

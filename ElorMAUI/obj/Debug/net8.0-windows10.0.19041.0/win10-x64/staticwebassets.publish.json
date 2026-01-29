@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1ZB/32QneAQP+0Z7DAoIhixNmJhRO7+N7Q6KiOXrEjo=",
+  "Hash": "dQArw5PJH8RG6rAJi4RGY0ctIcZ2s5IxwLHCOK/CBrQ=",
   "Source": "ElorMAUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -162,6 +162,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\img\\EEM-logo-color.svg",
+      "SourceId": "ElorMAUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/EEM-logo-color#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ychx4eo3z",
+      "Integrity": "OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\EEM-logo-color.svg"
     },
     {
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
@@ -733,6 +754,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="
+        }
+      ]
+    },
+    {
+      "Route": "img/EEM-logo-color.0ychx4eo3z.svg",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\img\\EEM-logo-color.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 11:34:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ychx4eo3z"
+        },
+        {
+          "Name": "label",
+          "Value": "img/EEM-logo-color.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM="
+        }
+      ]
+    },
+    {
+      "Route": "img/EEM-logo-color.svg",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\img\\EEM-logo-color.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 11:34:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM="
         }
       ]
     },

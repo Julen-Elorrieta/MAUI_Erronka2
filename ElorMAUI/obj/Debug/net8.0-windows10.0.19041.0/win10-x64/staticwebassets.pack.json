@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
+      "Id": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\img\\EEM-logo-color.svg",
+      "PackagePath": "staticwebassets\\img\\EEM-logo-color.svg"
+    },
+    {
       "Id": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

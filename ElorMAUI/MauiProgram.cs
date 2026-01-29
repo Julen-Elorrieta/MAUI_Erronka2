@@ -34,6 +34,7 @@ namespace ElorMAUI
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
             builder.UseMauiApp<App>().UseMauiMaps();
+
 #endif
             builder.Services.AddSingleton<ElorMAUI.Services.IkastetxeService>();
 
