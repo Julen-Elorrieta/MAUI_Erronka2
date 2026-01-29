@@ -29,25 +29,25 @@
     <AppXManifest Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-01-29T07:47:13.890</Modified>
+      <Modified>2026-01-29T08:59:32.911</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2026-01-28T12:35:35.156</Modified>
+      <Modified>2026-01-29T08:52:46.551</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ElorMAUI.runtimeconfig.json">
       <PackagePath>ElorMAUI.runtimeconfig.json</PackagePath>
-      <Modified>2026-01-28T11:42:56.638</Modified>
+      <Modified>2026-01-29T08:52:46.372</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ElorMAUI.dll">
       <PackagePath>ElorMAUI.dll</PackagePath>
-      <Modified>2026-01-29T07:47:13.686</Modified>
+      <Modified>2026-01-29T08:59:32.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ElorMAUI.exe</PackagePath>
-      <Modified>2026-01-29T07:47:13.689</Modified>
+      <Modified>2026-01-29T08:59:32.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -75,7 +75,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2026-01-26T07:06:35.476</Modified>
+      <Modified>2026-01-29T08:51:42.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\map.js">
+      <PackagePath>wwwroot\map.js</PackagePath>
+      <Modified>2026-01-29T08:52:38.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -307,7 +311,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ElorMAUI.deps.json">
       <PackagePath>ElorMAUI.deps.json</PackagePath>
-      <Modified>2026-01-28T12:35:35.017</Modified>
+      <Modified>2026-01-29T08:52:46.248</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
@@ -316,6 +320,10 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
       <Modified>2024-10-14T22:26:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\blazorleaflet\0.4.0-alpha\lib\netstandard2.0\BlazorLeaflet.dll">
+      <PackagePath>BlazorLeaflet.dll</PackagePath>
+      <Modified>2019-12-05T15:40:22.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.aspnetcore.authorization\8.0.10\lib\net8.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
@@ -449,6 +457,10 @@
       <PackagePath>Microsoft.Maui.Controls.dll</PackagePath>
       <Modified>2024-10-29T22:30:34.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.controls.maps\8.0.3\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Maps.dll">
+      <PackagePath>Microsoft.Maui.Controls.Maps.dll</PackagePath>
+      <Modified>2023-11-07T20:45:44.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.controls.xaml\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
       <PackagePath>Microsoft.Maui.Controls.Xaml.dll</PackagePath>
       <Modified>2024-10-29T22:31:06.000</Modified>
@@ -468,6 +480,10 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
       <Modified>2024-10-29T22:33:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.maps\8.0.3\lib\net8.0-windows10.0.19041\Microsoft.Maui.Maps.dll">
+      <PackagePath>Microsoft.Maui.Maps.dll</PackagePath>
+      <Modified>2023-11-07T20:47:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -683,7 +699,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.endpoints.json">
       <PackagePath>ElorMAUI.staticwebassets.endpoints.json</PackagePath>
-      <Modified>2026-01-26T12:25:16.940</Modified>
+      <Modified>2026-01-29T08:52:40.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.controls.compatibility\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>
@@ -696,6 +712,10 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.core\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
       <Modified>2024-10-29T21:54:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\blazorleaflet\0.4.0-alpha\staticwebassets\leafletBlazorInterops.js">
+      <PackagePath>wwwroot\_content\BlazorLeaflet\leafletBlazorInterops.js</PackagePath>
+      <Modified>2020-01-21T17:47:30.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\ElorMAUI.styles.css">
       <PackagePath>wwwroot\ElorMAUI.styles.css</PackagePath>

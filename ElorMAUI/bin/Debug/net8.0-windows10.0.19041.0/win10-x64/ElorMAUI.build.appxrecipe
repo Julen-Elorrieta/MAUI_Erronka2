@@ -58,6 +58,9 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\map.js">
+      <PackagePath>wwwroot\map.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -238,6 +241,9 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\blazorleaflet\0.4.0-alpha\lib\netstandard2.0\BlazorLeaflet.dll">
+      <PackagePath>BlazorLeaflet.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.aspnetcore.authorization\8.0.10\lib\net8.0\Microsoft.AspNetCore.Authorization.dll">
       <PackagePath>Microsoft.AspNetCore.Authorization.dll</PackagePath>
     </AppxPackagedFile>
@@ -337,6 +343,9 @@
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.controls.core\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.dll">
       <PackagePath>Microsoft.Maui.Controls.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.controls.maps\8.0.3\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Maps.dll">
+      <PackagePath>Microsoft.Maui.Controls.Maps.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.controls.xaml\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Xaml.dll">
       <PackagePath>Microsoft.Maui.Controls.Xaml.dll</PackagePath>
     </AppxPackagedFile>
@@ -351,6 +360,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.graphics.win2d.winui.desktop\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll">
       <PackagePath>Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.maps\8.0.3\lib\net8.0-windows10.0.19041\Microsoft.Maui.Maps.dll">
+      <PackagePath>Microsoft.Maui.Maps.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.windowsappsdk\1.5.240627000\lib\net6.0-windows10.0.18362.0\Microsoft.InteractiveExperiences.Projection.dll">
       <PackagePath>Microsoft.InteractiveExperiences.Projection.dll</PackagePath>
@@ -522,6 +534,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.core\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.pri">
       <PackagePath>Microsoft.Maui.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\blazorleaflet\0.4.0-alpha\staticwebassets\leafletBlazorInterops.js">
+      <PackagePath>wwwroot\_content\BlazorLeaflet\leafletBlazorInterops.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\scopedcss\bundle\ElorMAUI.styles.css">
       <PackagePath>wwwroot\ElorMAUI.styles.css</PackagePath>

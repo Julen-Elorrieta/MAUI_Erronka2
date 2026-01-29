@@ -2,6 +2,25 @@
   "version": 3,
   "targets": {
     "net8.0-android34.0": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -755,6 +774,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -834,6 +869,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -2418,6 +2469,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -2511,6 +2569,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -2647,6 +2793,25 @@
       }
     },
     "net8.0-android34.0/android-arm": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -3400,6 +3565,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -3479,6 +3660,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -5063,6 +5260,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -5156,6 +5360,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -5292,6 +5584,25 @@
       }
     },
     "net8.0-android34.0/android-arm64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -6045,6 +6356,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -6124,6 +6451,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -7708,6 +8051,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -7801,6 +8151,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -7937,6 +8375,25 @@
       }
     },
     "net8.0-android34.0/android-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -8690,6 +9147,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -8769,6 +9242,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -10353,6 +10842,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -10446,6 +10942,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -10582,6 +11166,25 @@
       }
     },
     "net8.0-android34.0/android-x86": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -11335,6 +11938,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -11414,6 +12033,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -12998,6 +13633,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -13091,6 +13733,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -13227,6 +13957,25 @@
       }
     },
     "net8.0-android34.0/iossimulator-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -13980,6 +14729,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -14059,6 +14824,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -15643,6 +16424,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -15736,6 +16524,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -15872,6 +16748,25 @@
       }
     },
     "net8.0-android34.0/maccatalyst-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -16625,6 +17520,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -16704,6 +17615,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -18288,6 +19215,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -18381,6 +19315,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -18517,6 +19539,25 @@
       }
     },
     "net8.0-android34.0/win10-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "GoogleGson/2.10.1.4": {
         "type": "package",
         "compile": {
@@ -19270,6 +20311,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -19349,6 +20406,22 @@
         },
         "runtime": {
           "lib/net8.0-android34.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.GooglePlayServices.Maps": "118.1.0.3"
+        },
+        "compile": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -20933,6 +22006,13 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Window.Extensions.Core.Core.targets": {}
         }
       },
+      "Xamarin.Build.Download/0.11.4": {
+        "type": "package",
+        "build": {
+          "buildTransitive/Xamarin.Build.Download.props": {},
+          "buildTransitive/Xamarin.Build.Download.targets": {}
+        }
+      },
       "Xamarin.Google.Android.Material/1.9.0.2": {
         "type": "package",
         "dependencies": {
@@ -21026,6 +22106,94 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Tasks": "118.0.2.3"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Collection": "1.2.0.8",
+          "Xamarin.AndroidX.Core": "1.10.1.1",
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Fragment": "1.6.0",
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Base": "118.2.0.2",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.11.4",
+          "Xamarin.GooglePlayServices.Basement": "118.2.0.2"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets": {}
         }
       },
       "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -21162,6 +22330,25 @@
       }
     },
     "net8.0-ios18.0": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -21902,6 +23089,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -21970,6 +23173,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -22021,6 +23237,25 @@
       }
     },
     "net8.0-ios18.0/android-arm": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -22761,6 +23996,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -22829,6 +24080,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -22880,6 +24144,25 @@
       }
     },
     "net8.0-ios18.0/android-arm64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -23620,6 +24903,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -23688,6 +24987,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -23739,6 +25051,25 @@
       }
     },
     "net8.0-ios18.0/android-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -24479,6 +25810,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -24547,6 +25894,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -24598,6 +25958,25 @@
       }
     },
     "net8.0-ios18.0/android-x86": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -25338,6 +26717,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -25406,6 +26801,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -25457,6 +26865,25 @@
       }
     },
     "net8.0-ios18.0/iossimulator-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -26197,6 +27624,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -26265,6 +27708,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -26316,6 +27772,25 @@
       }
     },
     "net8.0-ios18.0/maccatalyst-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -27056,6 +28531,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -27124,6 +28615,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -27175,6 +28679,25 @@
       }
     },
     "net8.0-ios18.0/win10-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -27915,6 +29438,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -27983,6 +29522,19 @@
         },
         "runtime": {
           "lib/net8.0-ios17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -28034,6 +29586,25 @@
       }
     },
     "net8.0-maccatalyst18.0": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -28774,6 +30345,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -28842,6 +30429,19 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -28893,6 +30493,25 @@
       }
     },
     "net8.0-maccatalyst18.0/android-arm": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -29633,6 +31252,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -29701,6 +31336,19 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -29752,6 +31400,25 @@
       }
     },
     "net8.0-maccatalyst18.0/android-arm64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -30492,6 +32159,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -30560,6 +32243,19 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -30611,6 +32307,25 @@
       }
     },
     "net8.0-maccatalyst18.0/android-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -31351,6 +33066,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -31419,6 +33150,19 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -31470,6 +33214,25 @@
       }
     },
     "net8.0-maccatalyst18.0/android-x86": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -32210,6 +33973,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -32278,6 +34057,19 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -32329,6 +34121,25 @@
       }
     },
     "net8.0-maccatalyst18.0/iossimulator-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -33069,6 +34880,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -33137,6 +34964,19 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -33188,6 +35028,25 @@
       }
     },
     "net8.0-maccatalyst18.0/maccatalyst-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -33928,6 +35787,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -33996,6 +35871,19 @@
         },
         "runtime": {
           "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Graphics.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
             "related": ".pdb;.xml"
           }
         }
@@ -34047,6 +35935,25 @@
       }
     },
     "net8.0-maccatalyst18.0/win10-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -34787,6 +36694,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -34859,6 +36782,19 @@
           }
         }
       },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Resizetizer/8.0.83": {
         "type": "package",
         "build": {
@@ -34906,6 +36842,25 @@
       }
     },
     "net8.0-windows10.0.19041": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -35688,6 +37643,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -35785,6 +37756,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -35934,6 +37918,25 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -36702,6 +38705,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -36799,6 +38818,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -36922,6 +38954,25 @@
       }
     },
     "net8.0-windows10.0.19041/android-arm64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -37690,6 +39741,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -37787,6 +39854,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -37910,6 +39990,25 @@
       }
     },
     "net8.0-windows10.0.19041/android-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -38678,6 +40777,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -38775,6 +40890,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -38898,6 +41026,25 @@
       }
     },
     "net8.0-windows10.0.19041/android-x86": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -39666,6 +41813,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -39763,6 +41926,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -39886,6 +42062,25 @@
       }
     },
     "net8.0-windows10.0.19041/iossimulator-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -40654,6 +42849,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -40751,6 +42962,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -40874,6 +43098,25 @@
       }
     },
     "net8.0-windows10.0.19041/maccatalyst-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -41642,6 +43885,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -41739,6 +43998,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -41862,6 +44134,25 @@
       }
     },
     "net8.0-windows10.0.19041/win10-x64": {
+      "BlazorLeaflet/0.4.0-alpha": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.0.0-rc1.19457.4",
+          "Microsoft.AspNetCore.Components.Web": "3.0.0-rc1.19457.4"
+        },
+        "compile": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BlazorLeaflet.dll": {}
+        },
+        "build": {
+          "buildTransitive/BlazorLeaflet.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorLeaflet.props": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/8.0.10": {
         "type": "package",
         "dependencies": {
@@ -42633,6 +44924,22 @@
           }
         }
       },
+      "Microsoft.Maui.Controls.Maps/8.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Maui.Maps": "8.0.3"
+        },
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Maui.Controls.Xaml/8.0.83": {
         "type": "package",
         "dependencies": {
@@ -42730,6 +45037,19 @@
         "runtime": {
           "lib/net8.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll": {
             "related": ".pdb"
+          }
+        }
+      },
+      "Microsoft.Maui.Maps/8.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll": {
+            "related": ".pdb;.xml"
           }
         }
       },
@@ -42857,6 +45177,23 @@
     }
   },
   "libraries": {
+    "BlazorLeaflet/0.4.0-alpha": {
+      "sha512": "zwx7kvkfkiW8JyDGojOpZqRsV6UB2SXH4yEiO/EeZgkzy+AP7fLRCe445P8nNwukAFnVG8HEZzNn50Wf3S6Gpg==",
+      "type": "package",
+      "path": "blazorleaflet/0.4.0-alpha",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "blazorleaflet.0.4.0-alpha.nupkg.sha512",
+        "blazorleaflet.nuspec",
+        "build/BlazorLeaflet.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorLeaflet.props",
+        "buildTransitive/BlazorLeaflet.props",
+        "lib/netstandard2.0/BlazorLeaflet.dll",
+        "staticwebassets/leafletBlazorInterops.js"
+      ]
+    },
     "GoogleGson/2.10.1.4": {
       "sha512": "L1vdbwbQzvKUoUGiMpMoJG5fqfLXaP6zMy1a26AYJQJSQKUO7Ojr2U5BAmgQoRxQ8J2GDjBfnfgnrsnorb4y5Q==",
       "type": "package",
@@ -44290,6 +46627,48 @@
         "microsoft.maui.controls.core.nuspec"
       ]
     },
+    "Microsoft.Maui.Controls.Maps/8.0.3": {
+      "sha512": "eMtzMm6GB8TpQKmqiStwNK6AwYOn2ivrHwLbrdpBa/5xDYXIQZIllBb3Wvm1H+fw/Id6EOLLjlti+7BD5ui9IQ==",
+      "type": "package",
+      "path": "microsoft.maui.controls.maps/8.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "icon.png",
+        "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.dll",
+        "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/net8.0-android34.0/Microsoft.Maui.Controls.Maps.xml",
+        "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.dll",
+        "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/net8.0-ios17.0/Microsoft.Maui.Controls.Maps.xml",
+        "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.dll",
+        "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Controls.Maps.xml",
+        "lib/net8.0-tizen7.0/Microsoft.Maui.Controls.Maps.dll",
+        "lib/net8.0-tizen7.0/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/net8.0-tizen7.0/Microsoft.Maui.Controls.Maps.xml",
+        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.dll",
+        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Controls.Maps.xml",
+        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Controls.Maps.dll",
+        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Controls.Maps.xml",
+        "lib/net8.0/Microsoft.Maui.Controls.Maps.dll",
+        "lib/net8.0/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/net8.0/Microsoft.Maui.Controls.Maps.xml",
+        "lib/netstandard2.0/Microsoft.Maui.Controls.Maps.dll",
+        "lib/netstandard2.0/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/netstandard2.0/Microsoft.Maui.Controls.Maps.xml",
+        "lib/netstandard2.1/Microsoft.Maui.Controls.Maps.dll",
+        "lib/netstandard2.1/Microsoft.Maui.Controls.Maps.pdb",
+        "lib/netstandard2.1/Microsoft.Maui.Controls.Maps.xml",
+        "microsoft.maui.controls.maps.8.0.3.nupkg.sha512",
+        "microsoft.maui.controls.maps.nuspec"
+      ]
+    },
     "Microsoft.Maui.Controls.Xaml/8.0.83": {
       "sha512": "RPOdOJvdpWwgdu0xC+e38VAs9W0Earc0s+5xBAV4Sj4X7BD19rfqb5eEAc3p1Bmq99uoWLEoJ6v6IZXvCm4Lpg==",
       "type": "package",
@@ -44559,6 +46938,48 @@
         "lib/net8.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
         "microsoft.maui.graphics.win2d.winui.desktop.8.0.83.nupkg.sha512",
         "microsoft.maui.graphics.win2d.winui.desktop.nuspec"
+      ]
+    },
+    "Microsoft.Maui.Maps/8.0.3": {
+      "sha512": "L51nXCSGqfVTkdNaBH3/m+dyYQ2mwXVVHXijRYNKQA5fvLsXQVtuVB3OPCERN6TCVaL8ZVbqPo4YRh/HHfO/gw==",
+      "type": "package",
+      "path": "microsoft.maui.maps/8.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "README.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "icon.png",
+        "lib/net8.0-android34.0/Microsoft.Maui.Maps.dll",
+        "lib/net8.0-android34.0/Microsoft.Maui.Maps.pdb",
+        "lib/net8.0-android34.0/Microsoft.Maui.Maps.xml",
+        "lib/net8.0-ios17.0/Microsoft.Maui.Maps.dll",
+        "lib/net8.0-ios17.0/Microsoft.Maui.Maps.pdb",
+        "lib/net8.0-ios17.0/Microsoft.Maui.Maps.xml",
+        "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.dll",
+        "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.pdb",
+        "lib/net8.0-maccatalyst17.0/Microsoft.Maui.Maps.xml",
+        "lib/net8.0-tizen7.0/Microsoft.Maui.Maps.dll",
+        "lib/net8.0-tizen7.0/Microsoft.Maui.Maps.pdb",
+        "lib/net8.0-tizen7.0/Microsoft.Maui.Maps.xml",
+        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.dll",
+        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.pdb",
+        "lib/net8.0-windows10.0.19041/Microsoft.Maui.Maps.xml",
+        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Maps.dll",
+        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Maps.pdb",
+        "lib/net8.0-windows10.0.20348/Microsoft.Maui.Maps.xml",
+        "lib/net8.0/Microsoft.Maui.Maps.dll",
+        "lib/net8.0/Microsoft.Maui.Maps.pdb",
+        "lib/net8.0/Microsoft.Maui.Maps.xml",
+        "lib/netstandard2.0/Microsoft.Maui.Maps.dll",
+        "lib/netstandard2.0/Microsoft.Maui.Maps.pdb",
+        "lib/netstandard2.0/Microsoft.Maui.Maps.xml",
+        "lib/netstandard2.1/Microsoft.Maui.Maps.dll",
+        "lib/netstandard2.1/Microsoft.Maui.Maps.pdb",
+        "lib/netstandard2.1/Microsoft.Maui.Maps.xml",
+        "microsoft.maui.maps.8.0.3.nupkg.sha512",
+        "microsoft.maui.maps.nuspec"
       ]
     },
     "Microsoft.Maui.Resizetizer/8.0.83": {
@@ -47357,6 +49778,28 @@
         "xamarin.androidx.window.extensions.core.core.nuspec"
       ]
     },
+    "Xamarin.Build.Download/0.11.4": {
+      "sha512": "u2ROt0h6P7mfs0jbmgvmTrqU/YEpEZcf16xcHa78GSEp7fOZunNtJLCZxooeI1V5p+lrr9kYdg3Pa8FoTbgcXQ==",
+      "type": "package",
+      "path": "xamarin.build.download/0.11.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICE.txt",
+        "build/Microsoft.Win32.Registry.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "buildTransitive/Microsoft.Win32.Registry.dll",
+        "buildTransitive/Newtonsoft.Json.dll",
+        "buildTransitive/Xamarin.Build.Download.dll",
+        "buildTransitive/Xamarin.Build.Download.props",
+        "buildTransitive/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.11.4.nupkg.sha512",
+        "xamarin.build.download.nuspec"
+      ]
+    },
     "Xamarin.Google.Android.Material/1.9.0.2": {
       "sha512": "sLmA5Kff8m4CjjUqYc8SZKjXpOF9xIAFJc2eNNfd8T0NY9bb6tbl6YL2rjUxCNI1qfs4qHaDHm/cDrEwI5DGfQ==",
       "type": "package",
@@ -47457,6 +49900,101 @@
         "lib/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.xml",
         "xamarin.google.guava.listenablefuture.1.0.0.14.nupkg.sha512",
         "xamarin.google.guava.listenablefuture.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Base/118.2.0.2": {
+      "sha512": "/kzRJJ3SiAB5E6chSzn6ItBwnLNIqZuub4Nbgah87UAo1XSL4w8Mo94UcjK8V6AG9FoY77+vo4fEYhmsgP5ePw==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.base/118.2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/monoandroid12.0/Xamarin.GooglePlayServices.Base.targets",
+        "build/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.GooglePlayServices.Base.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Base.targets",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Base.dll",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Base.pdb",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Base.xml",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.dll",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.pdb",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Base.xml",
+        "lib/net6.0-android31.0/play-services-base.aar",
+        "proguard/proguard.txt",
+        "xamarin.googleplayservices.base.118.2.0.2.nupkg.sha512",
+        "xamarin.googleplayservices.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Basement/118.2.0.2": {
+      "sha512": "xpoompl7wJd2YJZtQ/B4uSYDWv6JeXgT+7iJH9fT/V4HXptq3VYgsx5Ig3rE5hMn+2QoRoUwMWsS1HLlqaHX7Q==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.basement/118.2.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/monoandroid12.0/Xamarin.GooglePlayServices.Basement.targets",
+        "build/monoandroid12.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "build/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets",
+        "build/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "buildTransitive/monoandroid12.0/Xamarin.GooglePlayServices.Basement.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Basement.dll",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Basement.pdb",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Basement.xml",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.dll",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.pdb",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Basement.xml",
+        "lib/net6.0-android31.0/play-services-basement.aar",
+        "proguard/proguard.txt",
+        "xamarin.googleplayservices.basement.118.2.0.2.nupkg.sha512",
+        "xamarin.googleplayservices.basement.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Maps/118.1.0.3": {
+      "sha512": "+HqeLXiZtd/gOKD1Nl0ko078JfDCrk6eLWXzxQbulNFWLjByMOQtO8J4E85Ae5LwNk87L568Wuis7fQsn7JQMw==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.maps/118.1.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/monoandroid12.0/Xamarin.GooglePlayServices.Maps.targets",
+        "build/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.GooglePlayServices.Maps.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.targets",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Maps.dll",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Maps.pdb",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Maps.xml",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.dll",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.pdb",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Maps.xml",
+        "lib/net6.0-android31.0/play-services-maps.aar",
+        "xamarin.googleplayservices.maps.118.1.0.3.nupkg.sha512",
+        "xamarin.googleplayservices.maps.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Tasks/118.0.2.3": {
+      "sha512": "Xo/BbgZihz9WraXivooVLDwODpk1V1/ba8eKrgEN82ZBWUPytJZr10tbm88dO86tWrjTTHekO6rGEs41DmXI+g==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.tasks/118.0.2.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/monoandroid12.0/Xamarin.GooglePlayServices.Tasks.targets",
+        "build/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.GooglePlayServices.Tasks.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.targets",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Tasks.pdb",
+        "lib/monoandroid12.0/Xamarin.GooglePlayServices.Tasks.xml",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.pdb",
+        "lib/net6.0-android31.0/Xamarin.GooglePlayServices.Tasks.xml",
+        "lib/net6.0-android31.0/play-services-tasks.aar",
+        "proguard/proguard.txt",
+        "xamarin.googleplayservices.tasks.118.0.2.3.nupkg.sha512",
+        "xamarin.googleplayservices.tasks.nuspec"
       ]
     },
     "Xamarin.Jetbrains.Annotations/24.0.1.3": {
@@ -47616,35 +50154,43 @@
   },
   "projectFileDependencyGroups": {
     "net8.0-android34.0": [
+      "BlazorLeaflet >= 0.4.0-alpha",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.83",
       "Microsoft.Extensions.Http >= 10.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
+      "Microsoft.Maui.Controls.Maps >= 8.0.3",
       "Microsoft.NET.ILLink.Tasks >= 8.0.11"
     ],
     "net8.0-ios18.0": [
+      "BlazorLeaflet >= 0.4.0-alpha",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.83",
       "Microsoft.Extensions.Http >= 10.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
+      "Microsoft.Maui.Controls.Maps >= 8.0.3",
       "Microsoft.NET.ILLink.Tasks >= 8.0.11"
     ],
     "net8.0-maccatalyst18.0": [
+      "BlazorLeaflet >= 0.4.0-alpha",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.83",
       "Microsoft.Extensions.Http >= 10.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
       "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
+      "Microsoft.Maui.Controls.Maps >= 8.0.3",
       "Microsoft.NET.ILLink.Tasks >= 8.0.11"
     ],
     "net8.0-windows10.0.19041": [
+      "BlazorLeaflet >= 0.4.0-alpha",
       "Microsoft.AspNetCore.Components.WebView.Maui >= 8.0.83",
       "Microsoft.Extensions.Http >= 10.0.2",
       "Microsoft.Extensions.Logging.Debug >= 8.0.1",
       "Microsoft.Maui.Controls >= 8.0.83",
-      "Microsoft.Maui.Controls.Compatibility >= 8.0.83"
+      "Microsoft.Maui.Controls.Compatibility >= 8.0.83",
+      "Microsoft.Maui.Controls.Maps >= 8.0.3"
     ]
   },
   "packageFolders": {
@@ -47654,11 +50200,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
+      "projectUniqueName": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
       "projectName": "ElorMAUI",
-      "projectPath": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
+      "projectPath": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
       "packagesPath": "C:\\Users\\in2dm3-d\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\obj\\",
+      "outputPath": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
@@ -47714,6 +50260,10 @@
       "net8.0-android34.0": {
         "targetAlias": "net8.0-android",
         "dependencies": {
+          "BlazorLeaflet": {
+            "target": "Package",
+            "version": "[0.4.0-alpha, )"
+          },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[8.0.83, )"
@@ -47733,6 +50283,10 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.83, )"
+          },
+          "Microsoft.Maui.Controls.Maps": {
+            "target": "Package",
+            "version": "[8.0.3, )"
           },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
@@ -47765,6 +50319,10 @@
       "net8.0-ios18.0": {
         "targetAlias": "net8.0-ios",
         "dependencies": {
+          "BlazorLeaflet": {
+            "target": "Package",
+            "version": "[0.4.0-alpha, )"
+          },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[8.0.83, )"
@@ -47784,6 +50342,10 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.83, )"
+          },
+          "Microsoft.Maui.Controls.Maps": {
+            "target": "Package",
+            "version": "[8.0.3, )"
           },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
@@ -47826,6 +50388,10 @@
       "net8.0-maccatalyst18.0": {
         "targetAlias": "net8.0-maccatalyst",
         "dependencies": {
+          "BlazorLeaflet": {
+            "target": "Package",
+            "version": "[0.4.0-alpha, )"
+          },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[8.0.83, )"
@@ -47845,6 +50411,10 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.83, )"
+          },
+          "Microsoft.Maui.Controls.Maps": {
+            "target": "Package",
+            "version": "[8.0.3, )"
           },
           "Microsoft.NET.ILLink.Tasks": {
             "suppressParent": "All",
@@ -47888,6 +50458,10 @@
       "net8.0-windows10.0.19041": {
         "targetAlias": "net8.0-windows10.0.19041.0",
         "dependencies": {
+          "BlazorLeaflet": {
+            "target": "Package",
+            "version": "[0.4.0-alpha, )"
+          },
           "Microsoft.AspNetCore.Components.WebView.Maui": {
             "target": "Package",
             "version": "[8.0.83, )"
@@ -47907,6 +50481,10 @@
           "Microsoft.Maui.Controls.Compatibility": {
             "target": "Package",
             "version": "[8.0.83, )"
+          },
+          "Microsoft.Maui.Controls.Maps": {
+            "target": "Package",
+            "version": "[8.0.3, )"
           }
         },
         "imports": [

@@ -1,17 +1,13 @@
 ﻿@page "/centerlist"
-@inject ElorMAUI.Services.IkastetxeService servicio
 @inject NavigationManager Navigation
+@inject Services.IkastetxeService servicio
 @using ElorMAUI.Components.Model
 
 <h1>Lista de Centros</h1>
 
-@if (servicio.Centros == null)
+@if (servicio.Centros == null || !servicio.Centros.Any())
 {
         <p>Cargando...</p>
-}
-else if (!servicio.Centros.Any())
-{
-        <p>No hay centros disponibles.</p>
 }
 else
 {
@@ -81,25 +77,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        try
-        {
-            using var stream = await FileSystem.OpenAppPackageFileAsync("ikastetxeak.json");
-            using var reader = new StreamReader(stream);
-            var json = await reader.ReadToEndAsync();
-
-            if (!string.IsNullOrWhiteSpace(json) && json.TrimStart().StartsWith("["))
-            {
-                servicio.Centros = System.Text.Json.JsonSerializer.Deserialize<List<Centro>>(json) ?? new List<Centro>();
-            }
-            else
-            {
-                servicio.Centros = new List<Centro>();
-            }
-        }
-        catch
-        {
-            servicio.Centros = new List<Centro>();
-        }
+        await servicio.LoadCentrosAsync();
     }
 
     private IEnumerable<Centro> CentrosPaginados =>

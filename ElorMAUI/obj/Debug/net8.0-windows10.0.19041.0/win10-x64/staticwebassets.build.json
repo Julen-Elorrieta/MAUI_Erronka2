@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HmMBblLofUDkOr549iEzyLfLGs4K15cSGoAaGUlhXBM=",
+  "Hash": "jdvSjONz0XGe0YDqqLltiovdQJJvv1f2cnObGfSwiew=",
   "Source": "ElorMAUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -16,6 +16,27 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\leafletBlazorInterops.js",
+      "SourceId": "BlazorLeaflet",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\",
+      "BasePath": "_content/BlazorLeaflet",
+      "RelativePath": "leafletBlazorInterops.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "omzg933zqf",
+      "Integrity": "YJ0owRJMkWwHGtyWC07NSachLwo0cp9H9hmTdN/DWkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\leafletBlazorInterops.js"
+    },
     {
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-windows10.0.19041.0\\win10-x64\\scopedcss\\bundle\\ElorMAUI.styles.css",
       "SourceId": "ElorMAUI",
@@ -157,14 +178,72 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wlvhvw972c",
-      "Integrity": "RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=",
+      "Fingerprint": "zbthtjint4",
+      "Integrity": "v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\map.js",
+      "SourceId": "ElorMAUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "map#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fm8zzoy2kq",
+      "Integrity": "ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\map.js"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/BlazorLeaflet/leafletBlazorInterops.js",
+      "AssetFile": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\leafletBlazorInterops.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YJ0owRJMkWwHGtyWC07NSachLwo0cp9H9hmTdN/DWkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2020 17:47:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJ0owRJMkWwHGtyWC07NSachLwo0cp9H9hmTdN/DWkk="
+        }
+      ]
+    },
     {
       "Route": "css/app.css",
       "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\app.css",
@@ -668,7 +747,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "873"
+          "Value": "1073"
         },
         {
           "Name": "Content-Type",
@@ -676,11 +755,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=\""
+          "Value": "\"v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Thu, 29 Jan 2026 08:51:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -690,12 +769,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw="
+          "Value": "sha256-v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE="
         }
       ]
     },
     {
-      "Route": "index.wlvhvw972c.html",
+      "Route": "index.zbthtjint4.html",
       "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -705,7 +784,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "873"
+          "Value": "1073"
         },
         {
           "Name": "Content-Type",
@@ -713,11 +792,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=\""
+          "Value": "\"v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Thu, 29 Jan 2026 08:51:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -727,7 +806,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wlvhvw972c"
+          "Value": "zbthtjint4"
         },
         {
           "Name": "label",
@@ -735,7 +814,89 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw="
+          "Value": "sha256-v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE="
+        }
+      ]
+    },
+    {
+      "Route": "map.fm8zzoy2kq.js",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\map.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 08:52:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fm8zzoy2kq"
+        },
+        {
+          "Name": "label",
+          "Value": "map.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk="
+        }
+      ]
+    },
+    {
+      "Route": "map.js",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\map.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "466"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 08:52:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk="
         }
       ]
     }
