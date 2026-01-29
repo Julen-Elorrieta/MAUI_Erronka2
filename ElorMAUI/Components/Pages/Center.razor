@@ -8,6 +8,7 @@
 @using System
 @using System.Linq
 @using System.Collections.Generic
+@using System.Text.Json.Serialization
 
 <h3>Detalles del Centro</h3>
 <a href="/centerlist">Volver a la lista</a>
@@ -112,10 +113,10 @@ else
                     .Select(g => new PrevisionDia
                         {
                             Fecha = g.Key,
-                            TemperaturaMax = g.Max(x => x.Main.TempMax),
-                            TemperaturaMin = g.Min(x => x.Main.TempMin)
+                            TemperaturaMax = g.Max(x => x.Main.TempMax),  // temperatura máxima
+                            TemperaturaMin = g.Min(x => x.Main.TempMin)   // temperatura mínima
                         })
-                    .Take(5)
+                    .Take(5)  // Limita a 5 días
                     .ToList();
             }
 
@@ -128,6 +129,7 @@ else
             errorMeteorologia = ex.Message;
         }
     }
+
 
     // Modelos OpenWeather correctos
     public class OpenWeatherActual
@@ -153,8 +155,11 @@ else
 
     public class MainForecast
     {
+        [JsonPropertyName("temp")]
         public double Temp { get; set; }
+        [JsonPropertyName("temp_min")]
         public double TempMin { get; set; }
+        [JsonPropertyName("temp_max")]
         public double TempMax { get; set; }
     }
 }
