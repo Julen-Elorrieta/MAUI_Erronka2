@@ -12,6 +12,16 @@
 else
 {
     <div class="row mb-3">
+        <div class="col-12 col-md-6 mb-2">
+            <input class="form-control"
+                   type="text"
+                   placeholder="Buscar por nombre, dirección o municipio..."
+                   @oninput="OnSearchTextChanged"
+                   value="@searchText" />
+        </div>
+    </div>
+
+    <div class="row mb-3">
         <div class="col">
             <label>Tipo de centro</label>
             <select class="form-select" @bind="selectedTituc">
@@ -113,10 +123,17 @@ else
     private string? selectedTituc;
     private string? selectedTerre;
     private string? selectedMunic;
+    private string searchText = string.Empty;
 
     protected override async Task OnInitializedAsync()
     {
         await servicio.LoadCentrosAsync();
+    }
+
+    private void OnSearchTextChanged(ChangeEventArgs e)
+    {
+        searchText = e.Value?.ToString() ?? string.Empty;
+        currentPage = 1;
     }
 
     // Opciones para los selectores encadenados
@@ -152,7 +169,12 @@ else
             .Where(c =>
                 (string.IsNullOrEmpty(selectedTituc) || c.DTITUC == selectedTituc) &&
                 (string.IsNullOrEmpty(selectedTerre) || c.DTERRC == selectedTerre) &&
-                (string.IsNullOrEmpty(selectedMunic) || c.DMUNIC == selectedMunic)
+                (string.IsNullOrEmpty(selectedMunic) || c.DMUNIC == selectedMunic) &&
+                (string.IsNullOrWhiteSpace(searchText) ||
+                    (c.NOM?.Contains(searchText, StringComparison.OrdinalIgnoreCase) == true) ||
+                    (c.DOMI?.Contains(searchText, StringComparison.OrdinalIgnoreCase) == true) ||
+                    (c.DMUNIC?.Contains(searchText, StringComparison.OrdinalIgnoreCase) == true)
+                )
             );
 
     // Paginación sobre la lista filtrada
