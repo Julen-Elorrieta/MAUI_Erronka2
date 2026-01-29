@@ -1,0 +1,73 @@
+﻿@page "/center/{CCEN:int}"
+@using ElorMAUI.Components.Model
+@using ElorMAUI.Services
+@inject IkastetxeService servicio
+
+<h3>Detalles del Centro</h3>
+<a href="/centerlist">Volver a la lista</a>
+
+@if (servicio.Centros is null)
+{
+        <p>No se han encontrado centros.</p>
+}
+else if (Centro is null)
+{
+        <p>No se ha encontrado el centro solicitado.</p>
+}
+else
+{
+        <div class="card mt-3 mb-3">
+            <div class="card-body">
+                <h4 class="card-title">@Centro.NOM</h4>
+                <h6 class="card-subtitle mb-2 text-muted">@Centro.DGENRC</h6>
+                <p class="card-text">
+                    <strong>Dirección: </strong> @Centro.DOMI<br />
+                    <strong>Municipio: </strong> @Centro.DMUNIC<br />
+                    <strong>Código Postal: </strong> @Centro.CPOS<br />
+                    <strong>Teléfono: </strong> @Centro.TEL1<br />
+                    <strong>Email: </strong> @Centro.EMAIL<br />
+                    <strong>Página web: </strong>
+                @if (!string.IsNullOrWhiteSpace(Centro.PAGINA) && Centro.PAGINA.Trim() != "")
+                {
+                            <a href="@Centro.PAGINA" target="_blank">@Centro.PAGINA</a>
+                }
+                else
+                {
+                            <span>No disponible</span>
+                }
+                </p>
+                <button class="btn btn-success" @onclick="() => AbrirMapa1(Centro.DOMI)">
+                    Abrir Mapa con Dirección
+                </button>
+            </div>
+        </div>
+}
+
+@code {
+    [Parameter]
+    public int? CCEN { get; set; }
+
+    private Centro? Centro;
+
+    protected override void OnParametersSet()
+    {
+        Centro = servicio.Centros?.FirstOrDefault(c => c.CCEN == CCEN);
+    }
+
+    public async Task AbrirMapa1(string? direccion)
+    {
+        if (!string.IsNullOrEmpty(direccion))
+        {
+            string baseUrl = "https://www.google.com/maps/search/";
+            string url = $"{baseUrl}{Uri.EscapeDataString(direccion)}";
+            try
+            {
+                await Launcher.Default.OpenAsync(url);
+            }
+            catch (Exception ex)
+            {
+                await Shell.Current.DisplayAlert("Error", $"No se pudo abrir el mapa: {ex.Message}", "OK");
+            }
+        }
+    }
+}

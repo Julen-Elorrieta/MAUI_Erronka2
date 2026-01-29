@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-01-28T13:03:39.981</Modified>
+      <Modified>2026-01-29T07:47:13.890</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ElorMAUI.dll">
       <PackagePath>ElorMAUI.dll</PackagePath>
-      <Modified>2026-01-28T13:03:39.778</Modified>
+      <Modified>2026-01-29T07:47:13.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ElorMAUI.exe</PackagePath>
-      <Modified>2026-01-28T13:03:39.781</Modified>
+      <Modified>2026-01-29T07:47:13.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
