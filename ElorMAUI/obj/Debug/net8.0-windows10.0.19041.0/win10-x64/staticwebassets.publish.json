@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xGBWc2neMVlo3mUQ4GXw6tQYyZdmD0WiASqcMaz4WKs=",
+  "Hash": "1ZB/32QneAQP+0Z7DAoIhixNmJhRO7+N7Q6KiOXrEjo=",
   "Source": "ElorMAUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zbthtjint4",
-      "Integrity": "v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE=",
+      "Fingerprint": "x646cz54y8",
+      "Integrity": "uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -199,8 +199,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fm8zzoy2kq",
-      "Integrity": "ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk=",
+      "Fingerprint": "0lzndqozzl",
+      "Integrity": "HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\map.js"
@@ -747,7 +747,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1073"
+          "Value": "1063"
         },
         {
           "Name": "Content-Type",
@@ -755,11 +755,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE=\""
+          "Value": "\"uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 Jan 2026 08:51:42 GMT"
+          "Value": "Thu, 29 Jan 2026 09:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -769,12 +769,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE="
+          "Value": "sha256-uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8="
         }
       ]
     },
     {
-      "Route": "index.zbthtjint4.html",
+      "Route": "index.x646cz54y8.html",
       "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -784,7 +784,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1073"
+          "Value": "1063"
         },
         {
           "Name": "Content-Type",
@@ -792,11 +792,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE=\""
+          "Value": "\"uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 Jan 2026 08:51:42 GMT"
+          "Value": "Thu, 29 Jan 2026 09:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -806,7 +806,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zbthtjint4"
+          "Value": "x646cz54y8"
         },
         {
           "Name": "label",
@@ -814,12 +814,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-v/cR9OtM9Q5BO7wtKbJco/r64KpPREL8zl988NTbyvE="
+          "Value": "sha256-uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8="
         }
       ]
     },
     {
-      "Route": "map.fm8zzoy2kq.js",
+      "Route": "map.0lzndqozzl.js",
       "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\map.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -829,7 +829,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "466"
+          "Value": "642"
         },
         {
           "Name": "Content-Type",
@@ -837,11 +837,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk=\""
+          "Value": "\"HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 Jan 2026 08:52:38 GMT"
+          "Value": "Thu, 29 Jan 2026 10:40:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -851,7 +851,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fm8zzoy2kq"
+          "Value": "0lzndqozzl"
         },
         {
           "Name": "label",
@@ -859,7 +859,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk="
+          "Value": "sha256-HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko="
         }
       ]
     },
@@ -874,7 +874,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "466"
+          "Value": "642"
         },
         {
           "Name": "Content-Type",
@@ -882,11 +882,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk=\""
+          "Value": "\"HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 29 Jan 2026 08:52:38 GMT"
+          "Value": "Thu, 29 Jan 2026 10:40:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -896,7 +896,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ZxlCpZx3KrgxSdy2lcRdCHeWLFoUkI0wqDbIAceQMDk="
+          "Value": "sha256-HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko="
         }
       ]
     }

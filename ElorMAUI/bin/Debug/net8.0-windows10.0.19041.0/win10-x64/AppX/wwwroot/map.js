@@ -1,16 +1,19 @@
-window.createMap = (lat, lng, nombre) => {
+window.createMap = function (lat, lon, nombre, ccen, html) {
+    var map = L.map('map').setView([lat, lon], 13); // Crea el mapa centrado en las coordenadas
 
-    const map = L.map('map').setView([lat, lng], 16);
-
+    // Capa de OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap'
+        attribution: '© OpenStreetMap contributors'
     }).addTo(map);
 
-    const marker = L.marker([lat, lng]).addTo(map);
+    // Crea el marcador en el mapa
+    var marker = L.marker([lat, lon]).addTo(map);
 
-    marker.bindPopup(`<strong>${nombre}</strong><br>Pulsa para más info`);
+    // Asigna el HTML recibido desde Blazor como contenido del popup
+    marker.bindPopup(html);
 
-    marker.on('click', () => {
-        DotNet.invokeMethodAsync('ElorMAUI', 'OnMarkerClicked');
+    // Abre el popup al hacer click en el marcador
+    marker.on('click', function () {
+        marker.openPopup();
     });
 };

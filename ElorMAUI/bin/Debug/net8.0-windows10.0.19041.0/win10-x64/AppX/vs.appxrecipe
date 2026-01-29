@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-01-29T08:59:32.911</Modified>
+      <Modified>2026-01-29T10:40:36.754</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ElorMAUI.dll">
       <PackagePath>ElorMAUI.dll</PackagePath>
-      <Modified>2026-01-29T08:59:32.709</Modified>
+      <Modified>2026-01-29T10:40:36.527</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ElorMAUI.exe</PackagePath>
-      <Modified>2026-01-29T08:59:32.712</Modified>
+      <Modified>2026-01-29T10:40:36.531</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -75,11 +75,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\index.html">
       <PackagePath>wwwroot\index.html</PackagePath>
-      <Modified>2026-01-29T08:51:42.341</Modified>
+      <Modified>2026-01-29T09:36:14.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\wwwroot\map.js">
       <PackagePath>wwwroot\map.js</PackagePath>
-      <Modified>2026-01-29T08:52:38.025</Modified>
+      <Modified>2026-01-29T10:40:35.447</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
       <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
@@ -699,7 +699,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\staticwebassets.build.endpoints.json">
       <PackagePath>ElorMAUI.staticwebassets.endpoints.json</PackagePath>
-      <Modified>2026-01-29T08:52:40.778</Modified>
+      <Modified>2026-01-29T10:40:35.785</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.maui.controls.compatibility\8.0.83\lib\net8.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

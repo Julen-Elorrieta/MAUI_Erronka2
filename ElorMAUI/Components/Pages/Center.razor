@@ -1,7 +1,13 @@
 ﻿@page "/center/{CCEN:int}"
 @inject Services.IkastetxeService servicio
 @inject IJSRuntime JS
+@using System.Net.Http.Json
 @using ElorMAUI.Components.Model
+@using System.Net.Http
+@using System.Threading.Tasks
+@using System
+@using System.Linq
+@using System.Collections.Generic
 
 <h3>Detalles del Centro</h3>
 <a href="/centerlist">Volver a la lista</a>
@@ -17,51 +23,138 @@ else
                 <h4>@Centro.NOM</h4>
                 <p>@Centro.DOMI - @Centro.DMUNIC</p>
 
-                <div id="map" style="height:400px;" class="mb-3"></div>
-
-            @if (mostrarInfo)
-            {
-                        <div class="alert alert-info">
-                            <strong>Teléfono:</strong> @Centro.TEL1<br />
-                            <strong>Email:</strong> @Centro.EMAIL
-                        </div>
-            }
+                <div id="map" style="height:400px;"></div>
             </div>
         </div>
 }
 
 @code {
     [Parameter] public int CCEN { get; set; }
-
     private Centro? Centro;
-    private bool mostrarInfo = false;
+
+    private double? temperaturaActual;
+    private List<PrevisionDia>? previsionDias;
+    private string? errorMeteorologia;
+
+    public class PrevisionDia
+    {
+        public DateTime Fecha { get; set; }
+        public double TemperaturaMax { get; set; }
+        public double TemperaturaMin { get; set; }
+    }
 
     protected override async Task OnParametersSetAsync()
     {
         await servicio.LoadCentrosAsync();
-
-        Centro = servicio.Centros?
-            .FirstOrDefault(c => c.CCEN == CCEN);
+        Centro = servicio.Centros?.FirstOrDefault(c => c.CCEN == CCEN);
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender && Centro?.LATITUD != null && Centro?.LONGITUD != null)
         {
-            // ⚠️ Coordenadas intercambiadas en JSON
+            // Cargar datos meteorológicos solo si no están cargados
+            if (temperaturaActual == null || previsionDias == null)
+                await CargarDatosMeteorologicosAsync(Centro.LONGITUD.Value, Centro.LATITUD.Value);
+
+            // Construir HTML con la información del centro y los datos meteorológicos
+            string html = $"<strong>{Centro.NOM}</strong><br/>" +
+                          $"Dirección: {Centro.DOMI}, {Centro.DMUNIC}<br/>" +
+                          $"Teléfono: {Centro.TEL1}<br/>" +
+                          $"Email: {Centro.EMAIL}<br/>";
+
+            if (!string.IsNullOrEmpty(errorMeteorologia))
+                html += $"<div style='color:red;font-weight:bold;'>Error: {errorMeteorologia}</div>";
+
+            if (temperaturaActual != null)
+                html += $"Temperatura actual: {temperaturaActual.Value:F1} °C<br/>";
+
+            if (previsionDias != null && previsionDias.Any())
+            {
+                html += "<br/><strong>Previsión próximos días:</strong><br/><ul>";
+                foreach (var d in previsionDias)
+                    html += $"<li>{d.Fecha:dd/MM} - {d.TemperaturaMax:F1}°C / {d.TemperaturaMin:F1}°C</li>";
+                html += "</ul>";
+            }
+
+            // PASAMOS EL HTML DIRECTAMENTE AL JS
             await JS.InvokeVoidAsync(
                 "createMap",
-                Centro.LONGITUD.Value,
-                Centro.LATITUD.Value,
-                Centro.NOM
+                Centro.LONGITUD.Value,   // latitud tal cual en JSON
+                Centro.LATITUD.Value,    // longitud tal cual en JSON
+                Centro.NOM,
+                Centro.CCEN,
+                html  // <--- Aquí pasamos el HTML completo
             );
         }
     }
 
-    [JSInvokable]
-    public void OnMarkerClicked()
+    private async Task CargarDatosMeteorologicosAsync(double lat, double lon)
     {
-        mostrarInfo = true;
-        StateHasChanged();
+        try
+        {
+            string apiKey = "5bb016c9dbe5ba87a024e8f47152e97f"; // reemplaza por tu API key real
+            string urlActual = $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&appid={apiKey}";
+            string urlPrevision = $"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=metric&appid={apiKey}";
+
+            using var http = new HttpClient();
+
+            // Datos actuales
+            var actual = await http.GetFromJsonAsync<OpenWeatherActual>(urlActual);
+            temperaturaActual = actual?.Main.Temp;
+
+            // Datos previsión
+            var forecast = await http.GetFromJsonAsync<OpenWeatherForecast>(urlPrevision);
+            if (forecast?.List != null)
+            {
+                previsionDias = forecast.List
+                    .GroupBy(x => DateTimeOffset.FromUnixTimeSeconds(x.Dt).Date)
+                    .Select(g => new PrevisionDia
+                        {
+                            Fecha = g.Key,
+                            TemperaturaMax = g.Max(x => x.Main.TempMax),
+                            TemperaturaMin = g.Min(x => x.Main.TempMin)
+                        })
+                    .Take(5)
+                    .ToList();
+            }
+
+            errorMeteorologia = null;
+        }
+        catch (Exception ex)
+        {
+            temperaturaActual = null;
+            previsionDias = null;
+            errorMeteorologia = ex.Message;
+        }
+    }
+
+    // Modelos OpenWeather correctos
+    public class OpenWeatherActual
+    {
+        public MainData Main { get; set; } = new();
+    }
+
+    public class MainData
+    {
+        public double Temp { get; set; }
+    }
+
+    public class OpenWeatherForecast
+    {
+        public List<ForecastItem> List { get; set; } = new();
+    }
+
+    public class ForecastItem
+    {
+        public long Dt { get; set; }
+        public MainForecast Main { get; set; } = new();
+    }
+
+    public class MainForecast
+    {
+        public double Temp { get; set; }
+        public double TempMin { get; set; }
+        public double TempMax { get; set; }
     }
 }
