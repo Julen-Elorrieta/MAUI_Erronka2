@@ -1,0 +1,209 @@
+@page "/form"
+@page "/form/{CCEN:int}"
+
+@using ElorMAUI.Components.Model
+@inject ElorMAUI.Services.IkastetxeService servicio
+@inject NavigationManager Navigation
+
+<div class="formContainer shadow rounded p-4 bg-white mx-auto mt-4" style="max-width: 700px;">
+    <h3 class="mb-4 text-center text-primary fw-bold">
+        @(IsEditMode ? "Editar centro" : "Nuevo centro")
+    </h3>
+
+    <EditForm Model="CentroModel" OnValidSubmit="GuardarCentro">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label>Nombre</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.NOM" />
+                </div>
+                <div class="mb-3">
+                    <label>Nombre (Euskera)</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.NOME" />
+                </div>
+                <div class="mb-3">
+                    <label>Dirección</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DOMI" />
+                </div>
+                <div class="mb-3">
+                    <label>Código Postal</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.CPOS" />
+                </div>
+                <div class="mb-3">
+                    <label>Municipio</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DMUNIC" />
+                </div>
+                <div class="mb-3">
+                    <label>Municipio (Euskera)</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DMUNIE" />
+                </div>
+                <div class="mb-3">
+                    <label>Teléfono</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.TEL1" />
+                </div>
+                <div class="mb-3">
+                    <label>Fax</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.TFAX" />
+                </div>
+                <div class="mb-3">
+                    <label>Email</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.EMAIL" />
+                </div>
+                <div class="mb-3">
+                    <label>Página web</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.PAGINA" />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <label>Territorio</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DTERRC" />
+                </div>
+                <div class="mb-3">
+                    <label>Territorio (Euskera)</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DTERRE" />
+                </div>
+                <div class="mb-3">
+                    <label>Dependencia</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.DEPE" />
+                </div>
+                <div class="mb-3">
+                    <label>Tipo de centro</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DTITUC" />
+                </div>
+                <div class="mb-3">
+                    <label>Tipo de centro (Euskera)</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DTITUE" />
+                </div>
+                <div class="mb-3">
+                    <label>Género</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.GENR" />
+                </div>
+                <div class="mb-3">
+                    <label>Género (Castellano)</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DGENRC" />
+                </div>
+                <div class="mb-3">
+                    <label>Género (Euskera)</label>
+                    <InputText class="form-control" @bind-Value="CentroModel.DGENRE" />
+                </div>
+                <div class="mb-3">
+                    <label>Coordenada X</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.COOR_X" />
+                </div>
+                <div class="mb-3">
+                    <label>Coordenada Y</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.COOR_Y" />
+                </div>
+                <div class="mb-3">
+                    <label>Latitud</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.LATITUD" />
+                </div>
+                <div class="mb-3">
+                    <label>Longitud</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.LONGITUD" />
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <button type="submit" class="btn btn-primary px-4">
+                @(IsEditMode ? "Guardar cambios" : "Crear centro")
+            </button>
+            <button type="button" class="btn btn-secondary ms-2 px-4" @onclick="Volver">
+                Cancelar
+            </button>
+        </div>
+    </EditForm>
+</div>
+
+<style>
+    .formContainer {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    label {
+        font-weight: 500;
+        color: #374151;
+    }
+
+    .form-control:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 0.2rem rgba(59,130,246,.15);
+    }
+
+    h3 {
+        letter-spacing: 1px;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public int? CCEN { get; set; }
+
+    private Centro CentroModel = new();
+
+    private bool IsEditMode => CCEN.HasValue;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        await servicio.LoadCentrosAsync();
+
+        if (IsEditMode)
+        {
+            var centro = servicio.Centros
+                                 .FirstOrDefault(c => c.CCEN == CCEN);
+
+            if (centro != null)
+            {
+                CentroModel = new Centro
+                    {
+                        CCEN = centro.CCEN,
+                        NOM = centro.NOM,
+                        NOME = centro.NOME,
+                        DGENRC = centro.DGENRC,
+                        DGENRE = centro.DGENRE,
+                        GENR = centro.GENR,
+                        MUNI = centro.MUNI,
+                        DMUNIC = centro.DMUNIC,
+                        DMUNIE = centro.DMUNIE,
+                        DTERRC = centro.DTERRC,
+                        DTERRE = centro.DTERRE,
+                        DEPE = centro.DEPE,
+                        DTITUC = centro.DTITUC,
+                        DTITUE = centro.DTITUE,
+                        DOMI = centro.DOMI,
+                        CPOS = centro.CPOS,
+                        TEL1 = centro.TEL1,
+                        TFAX = centro.TFAX,
+                        EMAIL = centro.EMAIL,
+                        PAGINA = centro.PAGINA,
+                        COOR_X = centro.COOR_X,
+                        COOR_Y = centro.COOR_Y,
+                        LATITUD = centro.LATITUD,
+                        LONGITUD = centro.LONGITUD
+                    };
+            }
+        }
+        else
+        {
+            CentroModel = new Centro();
+        }
+    }
+
+    private async Task GuardarCentro()
+    {
+        await servicio.GuardarCentro(CentroModel);
+        Navigation.NavigateTo("/centerlist");
+    }
+
+    private void Volver()
+    {
+        Navigation.NavigateTo("/centerlist");
+    }
+}

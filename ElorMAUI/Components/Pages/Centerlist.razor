@@ -14,10 +14,15 @@ else
     <div class="row mb-3">
         <div class="col-12 col-md-6 mb-2">
             <input class="form-control"
-                   type="text"
-                   placeholder="Buscar por nombre, dirección o municipio..."
-                   @oninput="OnSearchTextChanged"
-                   value="@searchText" />
+            type="text"
+            placeholder="Buscar por nombre, dirección o municipio..."
+            @oninput="OnSearchTextChanged"
+            value="@searchText" />
+        </div>
+        <div>
+            <button class="btn btn-success" @onclick="NuevoCentro">
+                Añadir nuevo centro
+            </button>
         </div>
     </div>
 
@@ -68,34 +73,42 @@ else
             </tr>
         </thead>
         <tbody>
-        @foreach (var c in CentrosPaginados)
-        {
-            <tr>
-                <td>@c.NOM</td>
-                <td>@c.DOMI</td>
-                <td>@c.DMUNIC</td>
-                <td>@c.TEL1</td>
-                <td>
-                    <button class="btn btn-sm btn-primary"
-                            @onclick="() => VerDetalle(c.CCEN)">
-                        Ver detalles
-                    </button>
-                </td>
-            </tr>
-        }
+            @foreach (var c in CentrosPaginados)
+            {
+                <tr>
+                    <td>@c.NOM</td>
+                    <td>@c.DOMI</td>
+                    <td>@c.DMUNIC</td>
+                    <td>@c.TEL1</td>
+                    <td>
+                        <button class="btn btn-sm btn-primary"
+                        @onclick="() => VerDetalle(c.CCEN)">
+                            Ver detalles
+                        </button>
+                        <button class="btn btn-sm btn-warning"
+                        @onclick="() => EditarCentro(c.CCEN)">
+                            Editar
+                        </button>
+                        <button class="btn btn-sm btn-danger"
+                        @onclick="() => EliminarCentro(c.CCEN)">
+                            Eliminar
+                        </button>
+                    </td>
+                </tr>
+            }
         </tbody>
     </table>
 
     <div class="d-flex justify-content-center align-items-center mt-3">
         <button class="btn btn-sm btn-secondary me-2"
-                @onclick="@(() => SetPage(1))"
-                disabled="@(currentPage == 1)">
+        @onclick="@(() => SetPage(1))"
+        disabled="@(currentPage == 1)">
             Primero
         </button>
 
         <button class="btn btn-sm btn-secondary me-2"
-                @onclick="@(() => SetPage(currentPage - 1))"
-                disabled="@(currentPage == 1)">
+        @onclick="@(() => SetPage(currentPage - 1))"
+        disabled="@(currentPage == 1)">
             Anterior
         </button>
 
@@ -104,14 +117,14 @@ else
         </span>
 
         <button class="btn btn-sm btn-secondary ms-2"
-                @onclick="@(() => SetPage(currentPage + 1))"
-                disabled="@(currentPage == TotalPages)">
+        @onclick="@(() => SetPage(currentPage + 1))"
+        disabled="@(currentPage == TotalPages)">
             Siguiente
         </button>
 
         <button class="btn btn-sm btn-secondary ms-2"
-                @onclick="@(() => SetPage(TotalPages))"
-                disabled="@(currentPage == TotalPages)">
+        @onclick="@(() => SetPage(TotalPages))"
+        disabled="@(currentPage == TotalPages)">
             Último
         </button>
     </div>
@@ -217,4 +230,27 @@ else
         selectedMunic = e.Value?.ToString();
         currentPage = 1;
     }
+
+    private void NuevoCentro()
+    {
+        Navigation.NavigateTo("/form");
+    }
+
+    private void EditarCentro(int? ccen)
+    {
+        if (ccen.HasValue)
+            Navigation.NavigateTo($"/form/{ccen.Value}");
+    }
+
+    private void EliminarCentro(int? ccen)
+    {
+        if (!ccen.HasValue)
+            return;
+
+        servicio.EliminarCentro(ccen.Value);
+        servicio.LoadCentrosAsync();
+        currentPage = 1;
+        StateHasChanged();
+    }
+
 }
