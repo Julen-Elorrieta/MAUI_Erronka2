@@ -1,0 +1,249 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ElorMAUI</name>
+    </assembly>
+    <members>
+        <member name="T:ElorMAUI.Resources.Strings">
+            <summary>
+              Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.ResourceManager">
+            <summary>
+              Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.Culture">
+            <summary>
+              Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+              búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.AnadirCentroBtn">
+            <summary>
+              Busca una cadena traducida similar a Añadir nuevo centro.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.AnteriorBtn">
+            <summary>
+              Busca una cadena traducida similar a Anterior.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.BuscarPlaceholder">
+            <summary>
+              Busca una cadena traducida similar a Buscar por nombre, dirección o municipio....
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.CancelarBtn">
+            <summary>
+              Busca una cadena traducida similar a Cancelar.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.CargandoLabel">
+            <summary>
+              Busca una cadena traducida similar a Cargando....
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.CenterNotFound">
+            <summary>
+              Busca una cadena traducida similar a Centro no encontrado.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.CodigoPostalLabel">
+            <summary>
+              Busca una cadena traducida similar a Código Postal.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.CoordXLabel">
+            <summary>
+              Busca una cadena traducida similar a Coordenadas X.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.CoordYLabel">
+            <summary>
+              Busca una cadena traducida similar a Coordenada Y.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.CrearBtn">
+            <summary>
+              Busca una cadena traducida similar a Crear centro.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.DeLabel">
+            <summary>
+              Busca una cadena traducida similar a .
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.DependenciaLabel">
+            <summary>
+              Busca una cadena traducida similar a Dependencia.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.DireccionLabel">
+            <summary>
+              Busca una cadena traducida similar a Dirección.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.EditarBtn">
+            <summary>
+              Busca una cadena traducida similar a Editar.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.EliminarBtn">
+            <summary>
+              Busca una cadena traducida similar a Eliminar.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.EmailLabel">
+            <summary>
+              Busca una cadena traducida similar a Email.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.FaxLabel">
+            <summary>
+              Busca una cadena traducida similar a Fax.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.FormTitleEdit">
+            <summary>
+              Busca una cadena traducida similar a Editar centro.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.FormTitleNew">
+            <summary>
+              Busca una cadena traducida similar a Nuevo centro.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.GeneroCastLabel">
+            <summary>
+              Busca una cadena traducida similar a Género (castellano).
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.GeneroEuLabel">
+            <summary>
+              Busca una cadena traducida similar a Género (Euskera).
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.GeneroLabel">
+            <summary>
+              Busca una cadena traducida similar a Género.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.GuardarBtn">
+            <summary>
+              Busca una cadena traducida similar a Guardar cambios.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.LatitudLabel">
+            <summary>
+              Busca una cadena traducida similar a Latitud.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.ListaCentrosTitle">
+            <summary>
+              Busca una cadena traducida similar a Lista de Centros.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.LongitudLabel">
+            <summary>
+              Busca una cadena traducida similar a Longitud.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.MostrandoCentros">
+            <summary>
+              Busca una cadena traducida similar a Mostrando {0} centros.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.MunicipioEuLabel">
+            <summary>
+              Busca una cadena traducida similar a Municipio (euskera).
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.MunicipioLabel">
+            <summary>
+              Busca una cadena traducida similar a Municipio.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.NombreEuLabel">
+            <summary>
+              Busca una cadena traducida similar a Nombre (Euskera).
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.NombreLabel">
+            <summary>
+              Busca una cadena traducida similar a Nombre.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.PaginaLabel">
+            <summary>
+              Busca una cadena traducida similar a .
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.PaginaWebLabel">
+            <summary>
+              Busca una cadena traducida similar a Página web.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.PrevisionDiasLabel">
+            <summary>
+              Busca una cadena traducida similar a Previsión de los días.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.PrimeroBtn">
+            <summary>
+              Busca una cadena traducida similar a Primero.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.SiguienteBtn">
+            <summary>
+              Busca una cadena traducida similar a Sigueinte.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.TelefonoLabel">
+            <summary>
+              Busca una cadena traducida similar a Teléfono.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.TemperaturaActualLabel">
+            <summary>
+              Busca una cadena traducida similar a Temperatura actual.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.TerritorioEuLabel">
+            <summary>
+              Busca una cadena traducida similar a Territori (Euskera).
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.TerritorioLabel">
+            <summary>
+              Busca una cadena traducida similar a Territorio.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.TipoCentroEuLabel">
+            <summary>
+              Busca una cadena traducida similar a Tipo de centro (Euskera).
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.TipoCentroLabel">
+            <summary>
+              Busca una cadena traducida similar a Tipo de centro.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.TodosLabel">
+            <summary>
+              Busca una cadena traducida similar a Todos.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.UltimoBtn">
+            <summary>
+              Busca una cadena traducida similar a Último.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.VerDetallesBtn">
+            <summary>
+              Busca una cadena traducida similar a Ver detalles.
+            </summary>
+        </member>
+    </members>
+</doc>

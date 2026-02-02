@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.DependencyInjection;
 using ElorMAUI.Services;
+using Microsoft.Maui.Controls.Hosting;
 
 namespace ElorMAUI
 {
@@ -33,10 +34,10 @@ namespace ElorMAUI
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
             builder.Logging.AddDebug();
-            builder.UseMauiApp<App>().UseMauiMaps();
-
 #endif
-            builder.Services.AddSingleton<ElorMAUI.Services.IkastetxeService>();
+
+            // Servicios
+            builder.Services.AddSingleton<IkastetxeService>();
 
             return builder.Build();
         }

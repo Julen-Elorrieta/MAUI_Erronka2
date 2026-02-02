@@ -12,6 +12,7 @@
           "BlazorLeaflet": "0.4.0-alpha",
           "Microsoft.AspNetCore.Components.WebView.Maui": "8.0.83",
           "Microsoft.Extensions.Http": "10.0.2",
+          "Microsoft.Extensions.Localization": "10.0.2",
           "Microsoft.Extensions.Logging.Debug": "8.0.1",
           "Microsoft.Maui.Controls": "8.0.83",
           "Microsoft.Maui.Controls.Compatibility": "8.0.83",
@@ -20,6 +21,14 @@
         },
         "runtime": {
           "ElorMAUI.dll": {}
+        },
+        "resources": {
+          "en/ElorMAUI.resources.dll": {
+            "locale": "en"
+          },
+          "eu/ElorMAUI.resources.dll": {
+            "locale": "eu"
+          }
         }
       },
       "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.19041.54": {
@@ -311,6 +320,28 @@
         },
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Http.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.225.61305"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization/10.0.2": {
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.2",
+          "Microsoft.Extensions.Localization.Abstractions": "10.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.2",
+          "Microsoft.Extensions.Options": "10.0.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Localization.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.225.61305"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/10.0.2": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll": {
             "assemblyVersion": "10.0.0.0",
             "fileVersion": "10.0.225.61305"
           }
@@ -928,6 +959,20 @@
       "sha512": "sha512-egUPC0xydb1ugCMcRyJ6zaOGOzx7N4coOVlGeLcIsXhUf1xHHwZeX+ob7JuG0dXExFduHYE/t+4/4y8BLlBKmw==",
       "path": "microsoft.extensions.http/10.0.2",
       "hashPath": "microsoft.extensions.http.10.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization/10.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oAJpwUcIptmOpVqYi6fj0c0PemxPxJ1UTT4d8zWYNmhZI53s2mruk5n4lPcSh+oDdi1pt05Ss46OxNTlA7ZLPA==",
+      "path": "microsoft.extensions.localization/10.0.2",
+      "hashPath": "microsoft.extensions.localization.10.0.2.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization.Abstractions/10.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-O28Xu6BMUYfFwzK2U5OyctQDrcGC3cewL026Af5WaQKmsdhJK1KEmCFloC2ZqHhh4ldizJOg4j/BuBEJeRZcrw==",
+      "path": "microsoft.extensions.localization.abstractions/10.0.2",
+      "hashPath": "microsoft.extensions.localization.abstractions.10.0.2.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/10.0.2": {
       "type": "package",

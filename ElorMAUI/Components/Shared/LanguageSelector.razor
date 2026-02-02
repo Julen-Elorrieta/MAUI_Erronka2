@@ -1,0 +1,54 @@
+@using System.Globalization
+@inject NavigationManager Navigation
+
+<select class="form-select" style="width:150px;" @bind="selectedLang">
+    <option value="es-ES">Español</option>
+    <option value="en-US">English</option>
+    <option value="eu-ES">Euskera</option>
+</select>
+
+@code {
+    [Parameter] public EventCallback<string> OnLanguageChangedCallback { get; set; }
+
+    private string _selectedLang;
+    private string selectedLang
+    {
+        get => _selectedLang;
+        set
+        {
+            if (_selectedLang != value)
+            {
+                _selectedLang = value;
+                OnSelectedLangChanged(value);
+            }
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+#if ANDROID || IOS || WINDOWS || MACCATALYST
+    _selectedLang = Microsoft.Maui.Storage.Preferences.Default.Get("AppCulture", CultureInfo.CurrentUICulture.Name);
+#else
+        _selectedLang = CultureInfo.CurrentUICulture.Name;
+#endif
+    }
+
+    private void OnSelectedLangChanged(string lang)
+    {
+        CultureInfo.DefaultThreadCurrentCulture = new CultureInfo(lang);
+        CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo(lang);
+
+#if ANDROID || IOS || WINDOWS || MACCATALYST
+    Microsoft.Maui.Storage.Preferences.Default.Set("AppCulture", lang);
+#endif
+
+        if (OnLanguageChangedCallback.HasDelegate)
+        {
+            OnLanguageChangedCallback.InvokeAsync(lang);
+        }
+        else
+        {
+            Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+        }
+    }
+}

@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 {
   "Version": 1,
-  "Hash": "9ovD6DDmYbsGdF+ykgEh2jYDbAQYthPTVazQFf2VvnI=",
+  "Hash": "uvFBkx4G2r1IE4fZGMi6G2InzQTux3c258VQsVJa2as=",
   "Source": "ElorMAUI",
   "BasePath": "/",
   "Mode": "Root",
@@ -11,12 +10,33 @@
     {
       "Name": "ElorMAUI\\wwwroot",
       "Source": "ElorMAUI",
-      "ContentRoot": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
       "BasePath": "/",
       "Pattern": "**"
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\leafletBlazorInterops.js",
+      "SourceId": "BlazorLeaflet",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\",
+      "BasePath": "_content/BlazorLeaflet",
+      "RelativePath": "leafletBlazorInterops.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "omzg933zqf",
+      "Integrity": "YJ0owRJMkWwHGtyWC07NSachLwo0cp9H9hmTdN/DWkk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\leafletBlazorInterops.js"
+    },
     {
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ElorMAUI.styles.css",
       "SourceId": "ElorMAUI",
@@ -63,7 +83,7 @@
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\app.css",
       "SourceId": "ElorMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/app#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -84,7 +104,7 @@
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "ElorMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -105,7 +125,7 @@
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "ElorMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -126,7 +146,7 @@
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\favicon.png",
       "SourceId": "ElorMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "favicon#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -144,10 +164,31 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
+      "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\img\\EEM-logo-color.svg",
+      "SourceId": "ElorMAUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "img/EEM-logo-color#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ychx4eo3z",
+      "Integrity": "OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\EEM-logo-color.svg"
+    },
+    {
       "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
       "SourceId": "ElorMAUI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\in2dm3-d\\source\\repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
       "BasePath": "/",
       "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -158,14 +199,72 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wlvhvw972c",
-      "Integrity": "RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=",
+      "Fingerprint": "x646cz54y8",
+      "Integrity": "uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\map.js",
+      "SourceId": "ElorMAUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "map#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0lzndqozzl",
+      "Integrity": "HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\map.js"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/BlazorLeaflet/leafletBlazorInterops.js",
+      "AssetFile": "C:\\Users\\in2dm3-d\\.nuget\\packages\\blazorleaflet\\0.4.0-alpha\\staticwebassets\\leafletBlazorInterops.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11920"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YJ0owRJMkWwHGtyWC07NSachLwo0cp9H9hmTdN/DWkk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 21 Jan 2020 17:47:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YJ0owRJMkWwHGtyWC07NSachLwo0cp9H9hmTdN/DWkk="
+        }
+      ]
+    },
     {
       "Route": "css/app.css",
       "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\app.css",
@@ -435,7 +534,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Mon, 02 Feb 2026 13:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -480,7 +579,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Mon, 02 Feb 2026 13:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -525,7 +624,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Mon, 02 Feb 2026 13:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -562,7 +661,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Mon, 02 Feb 2026 13:12:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -659,6 +758,88 @@
       ]
     },
     {
+      "Route": "img/EEM-logo-color.0ychx4eo3z.svg",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\img\\EEM-logo-color.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 11:34:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ychx4eo3z"
+        },
+        {
+          "Name": "label",
+          "Value": "img/EEM-logo-color.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM="
+        }
+      ]
+    },
+    {
+      "Route": "img/EEM-logo-color.svg",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\img\\EEM-logo-color.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8971"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 11:34:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OHMDg+i2GuCarFWze42MEY4eoRO81+uK7B9hwlLHyTM="
+        }
+      ]
+    },
+    {
       "Route": "index.html",
       "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
       "Selectors": [],
@@ -669,7 +850,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "873"
+          "Value": "1063"
         },
         {
           "Name": "Content-Type",
@@ -677,11 +858,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=\""
+          "Value": "\"uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Thu, 29 Jan 2026 09:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -691,12 +872,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw="
+          "Value": "sha256-uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8="
         }
       ]
     },
     {
-      "Route": "index.wlvhvw972c.html",
+      "Route": "index.x646cz54y8.html",
       "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -706,7 +887,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "873"
+          "Value": "1063"
         },
         {
           "Name": "Content-Type",
@@ -714,11 +895,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=\""
+          "Value": "\"uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jan 2026 07:06:35 GMT"
+          "Value": "Thu, 29 Jan 2026 09:36:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -728,7 +909,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "wlvhvw972c"
+          "Value": "x646cz54y8"
         },
         {
           "Name": "label",
@@ -736,12 +917,91 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw="
+          "Value": "sha256-uaKCd9iOOTIB4jr/hjXHty7icpoSRwUwliVg1UVgVG8="
+        }
+      ]
+    },
+    {
+      "Route": "map.0lzndqozzl.js",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\map.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 10:40:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0lzndqozzl"
+        },
+        {
+          "Name": "label",
+          "Value": "map.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko="
+        }
+      ]
+    },
+    {
+      "Route": "map.js",
+      "AssetFile": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\map.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "642"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 29 Jan 2026 10:40:35 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HNdZCSDJR2nTN33/ttDcPi3rc0OXq2NKinKQTJTKGko="
         }
       ]
     }
   ]
 }
-=======
-{"Version":1,"Hash":"SABJBM/CD7o0XVBT+aSqUXaAKSvIFpkjs1TFQCnNza0=","Source":"ElorMAUI","BasePath":"/","Mode":"Root","ManifestType":"Publish","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"ElorMAUI\\wwwroot","Source":"ElorMAUI","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\","BasePath":"/","Pattern":"**"}],"Assets":[{"Identity":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ElorMAUI.styles.css","SourceId":"ElorMAUI","SourceType":"Computed","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\","BasePath":"/","RelativePath":"ElorMAUI#[.{fingerprint}]?.styles.css","AssetKind":"All","AssetMode":"CurrentProject","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"ScopedCss","AssetTraitValue":"ApplicationBundle","Fingerprint":"0fs8ts3djo","Integrity":"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ElorMAUI.styles.css","FileLength":1796,"LastWriteTime":"2026-01-26T08:11:01+00:00"},{"Identity":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css","SourceId":"ElorMAUI","SourceType":"Computed","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\","BasePath":"/","RelativePath":"ElorMAUI#[.{fingerprint}]!.bundle.scp.css","AssetKind":"All","AssetMode":"Reference","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"ScopedCss","AssetTraitValue":"ProjectBundle","Fingerprint":"0fs8ts3djo","Integrity":"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css","FileLength":1796,"LastWriteTime":"2026-01-26T08:11:01+00:00"},{"Identity":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\app.css","SourceId":"ElorMAUI","SourceType":"Discovered","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\","BasePath":"/","RelativePath":"css/app#[.{fingerprint}]?.css","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"dex3usdpik","Integrity":"K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\css\\app.css","FileLength":3339,"LastWriteTime":"2026-01-26T08:11:01+00:00"},{"Identity":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css","SourceId":"ElorMAUI","SourceType":"Discovered","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\","BasePath":"/","RelativePath":"css/bootstrap/bootstrap.min#[.{fingerprint}]?.css","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"6gzpyzhau4","Integrity":"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\css\\bootstrap\\bootstrap.min.css","FileLength":162726,"LastWriteTime":"2026-01-26T08:11:01+00:00"},{"Identity":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map","SourceId":"ElorMAUI","SourceType":"Discovered","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\","BasePath":"/","RelativePath":"css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"8inm30yfxf","Integrity":"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\css\\bootstrap\\bootstrap.min.css.map","FileLength":449111,"LastWriteTime":"2026-01-26T08:11:01+00:00"},{"Identity":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\favicon.png","SourceId":"ElorMAUI","SourceType":"Discovered","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\","BasePath":"/","RelativePath":"favicon#[.{fingerprint}]?.png","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"ifv42okdf2","Integrity":"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\favicon.png","FileLength":1148,"LastWriteTime":"2026-01-26T08:11:01+00:00"},{"Identity":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html","SourceId":"ElorMAUI","SourceType":"Discovered","ContentRoot":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\","BasePath":"/","RelativePath":"index#[.{fingerprint}]?.html","AssetKind":"All","AssetMode":"All","AssetRole":"Primary","AssetMergeBehavior":"","AssetMergeSource":"","RelatedAsset":"","AssetTraitName":"","AssetTraitValue":"","Fingerprint":"wlvhvw972c","Integrity":"RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=","CopyToOutputDirectory":"Never","CopyToPublishDirectory":"PreserveNewest","OriginalItemSpec":"wwwroot\\index.html","FileLength":873,"LastWriteTime":"2026-01-26T08:11:01+00:00"}],"Endpoints":[{"Route":"css/app.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\app.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3339"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ="}]},{"Route":"css/app.dex3usdpik.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\app.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"3339"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"dex3usdpik"},{"Name":"label","Value":"css/app.css"},{"Name":"integrity","Value":"sha256-K1bY5kgLeD7nMlhLfmEK3TdjOVTQGBzyOIF4YwRlzuQ="}]},{"Route":"css/bootstrap/bootstrap.min.6gzpyzhau4.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"162726"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"6gzpyzhau4"},{"Name":"label","Value":"css/bootstrap/bootstrap.min.css"},{"Name":"integrity","Value":"sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="}]},{"Route":"css/bootstrap/bootstrap.min.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"162726"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="}]},{"Route":"css/bootstrap/bootstrap.min.css.8inm30yfxf.map","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"449111"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"8inm30yfxf"},{"Name":"label","Value":"css/bootstrap/bootstrap.min.css.map"},{"Name":"integrity","Value":"sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="}]},{"Route":"css/bootstrap/bootstrap.min.css.map","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"449111"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="}]},{"Route":"ElorMAUI.0fs8ts3djo.bundle.scp.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1796"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"0fs8ts3djo"},{"Name":"label","Value":"ElorMAUI.bundle.scp.css"},{"Name":"integrity","Value":"sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="}]},{"Route":"ElorMAUI.0fs8ts3djo.styles.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ElorMAUI.styles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1796"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"0fs8ts3djo"},{"Name":"label","Value":"ElorMAUI.styles.css"},{"Name":"integrity","Value":"sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="}]},{"Route":"ElorMAUI.bundle.scp.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\projectbundle\\ElorMAUI.bundle.scp.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1796"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="}]},{"Route":"ElorMAUI.styles.css","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\obj\\Debug\\net8.0-android\\scopedcss\\bundle\\ElorMAUI.styles.css","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1796"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\"JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-JCGvpXeA48aB50CYq1o0C9Sh0ztsD4Qb0+vXhwU0Fuo="}]},{"Route":"favicon.ifv42okdf2.png","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\favicon.png","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1148"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"ifv42okdf2"},{"Name":"label","Value":"favicon.png"},{"Name":"integrity","Value":"sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="}]},{"Route":"favicon.png","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\favicon.png","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"1148"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\"4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-4mWsDy3aHl36ZbGt8zByK7Pvd4kRUoNgTYzRnwmPHwg="}]},{"Route":"index.html","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"873"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"no-cache"}],"EndpointProperties":[{"Name":"integrity","Value":"sha256-RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw="}]},{"Route":"index.wlvhvw972c.html","AssetFile":"C:\\Users\\in2dm3-d.ELORRIETA\\Desktop\\Erronka2\\MAUI_Erronka2\\ElorMAUI\\wwwroot\\index.html","Selectors":[],"ResponseHeaders":[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Content-Length","Value":"873"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\"RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw=\""},{"Name":"Last-Modified","Value":"Mon, 26 Jan 2026 08:11:01 GMT"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"}],"EndpointProperties":[{"Name":"fingerprint","Value":"wlvhvw972c"},{"Name":"label","Value":"index.html"},{"Name":"integrity","Value":"sha256-RAn544ug/1MP7/4eJenUFn9pg1mvNbMr2QyrYxe1yjw="}]}]}
->>>>>>> 3631464b63a50ba9bd699f67bbd6b03fc007b84c

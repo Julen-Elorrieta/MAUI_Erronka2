@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "fgmJUVeXHl8=",
+  "dgSpecHash": "yxM9WY0m3PM=",
   "success": true,
   "projectFilePath": "C:\\Users\\in2dm3-d\\Source\\Repos\\MAUI_Erronka2\\ElorMAUI\\ElorMAUI.csproj",
   "expectedPackageFiles": [
@@ -29,6 +29,8 @@
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\8.0.0\\microsoft.extensions.fileproviders.physical.8.0.0.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.http\\10.0.2\\microsoft.extensions.http.10.0.2.nupkg.sha512",
+    "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.localization\\10.0.2\\microsoft.extensions.localization.10.0.2.nupkg.sha512",
+    "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\10.0.2\\microsoft.extensions.localization.abstractions.10.0.2.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.logging\\10.0.2\\microsoft.extensions.logging.10.0.2.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.2\\microsoft.extensions.logging.abstractions.10.0.2.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.extensions.logging.debug\\8.0.1\\microsoft.extensions.logging.debug.8.0.1.nupkg.sha512",
@@ -143,6 +145,11 @@
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\xamarin.kotlin.stdlib.jdk8\\1.9.0.1\\xamarin.kotlin.stdlib.jdk8.1.9.0.1.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\xamarin.kotlinx.coroutines.android\\1.7.2.1\\xamarin.kotlinx.coroutines.android.1.7.2.1.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\xamarin.kotlinx.coroutines.core.jvm\\1.7.2.1\\xamarin.kotlinx.coroutines.core.jvm.1.7.2.1.nupkg.sha512",
+    "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.android.runtime.34.android-x64\\34.0.145\\microsoft.android.runtime.34.android-x64.34.0.145.nupkg.sha512",
+    "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.android.runtime.34.android-arm64\\34.0.145\\microsoft.android.runtime.34.android-arm64.34.0.145.nupkg.sha512",
+    "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.android.ref.34\\34.0.145\\microsoft.android.ref.34.34.0.145.nupkg.sha512",
+    "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.android.runtime.34.android-arm\\34.0.145\\microsoft.android.runtime.34.android-arm.34.0.145.nupkg.sha512",
+    "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.android.runtime.34.android-x86\\34.0.145\\microsoft.android.runtime.34.android-x86.34.0.145.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.ios.ref.net8.0_18.0\\18.0.8316\\microsoft.ios.ref.net8.0_18.0.18.0.8316.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0\\18.0.8316\\microsoft.ios.runtime.iossimulator-x64.net8.0_18.0.18.0.8316.nupkg.sha512",
     "C:\\Users\\in2dm3-d\\.nuget\\packages\\microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0\\18.0.8316\\microsoft.maccatalyst.runtime.maccatalyst-x64.net8.0_18.0.18.0.8316.nupkg.sha512",

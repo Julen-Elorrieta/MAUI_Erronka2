@@ -2,132 +2,133 @@
 @inject NavigationManager Navigation
 @inject Services.IkastetxeService servicio
 @using ElorMAUI.Components.Model
+@using ElorMAUI.Resources
 
-<h1>Lista de Centros</h1>
+<h1>@Strings.ListaCentrosTitle</h1>
 
 @if (servicio.Centros == null || !servicio.Centros.Any())
 {
-    <p>Cargando...</p>
+        <p>@Strings.CargandoLabel</p>
 }
 else
 {
-    <div class="row mb-3">
-        <div class="col-12 col-md-6 mb-2">
-            <input class="form-control"
-            type="text"
-            placeholder="Buscar por nombre, dirección o municipio..."
-            @oninput="OnSearchTextChanged"
-            value="@searchText" />
+        <div class="row mb-3">
+            <div class="col-12 col-md-6 mb-2">
+                <input class="form-control"
+                       type="text"
+                       placeholder="@Strings.BuscarPlaceholder"
+                       @oninput="OnSearchTextChanged"
+                       value="@searchText" />
+            </div>
+            <div>
+                <button class="btn btn-success" @onclick="NuevoCentro">
+                @Strings.AnadirCentroBtn
+                </button>
+            </div>
         </div>
-        <div>
-            <button class="btn btn-success" @onclick="NuevoCentro">
-                Añadir nuevo centro
-            </button>
-        </div>
-    </div>
 
-    <div class="row mb-3">
-        <div class="col">
-            <label>Tipo de centro</label>
-            <select class="form-select" @bind="selectedTituc">
-                <option value="">Todos</option>
+        <div class="row mb-3">
+            <div class="col">
+                <label>@Strings.TipoCentroLabel</label>
+                <select class="form-select" @bind="selectedTituc">
+                    <option value="">@Strings.TodosLabel</option>
                 @foreach (var t in TitucOptions)
                 {
-                    <option value="@t">@t</option>
+                            <option value="@t">@t</option>
                 }
-            </select>
-        </div>
-        <div class="col">
-            <label>Territorio</label>
-            <select class="form-select" @bind="selectedTerre">
-                <option value="">Todos</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>@Strings.TerritorioLabel</label>
+                <select class="form-select" @bind="selectedTerre">
+                    <option value="">@Strings.TodosLabel</option>
                 @foreach (var t in TerreOptions)
                 {
-                    <option value="@t">@t</option>
+                            <option value="@t">@t</option>
                 }
-            </select>
-        </div>
-        <div class="col">
-            <label>Municipio</label>
-            <select class="form-select" @bind="selectedMunic">
-                <option value="">Todos</option>
+                </select>
+            </div>
+            <div class="col">
+                <label>@Strings.MunicipioLabel</label>
+                <select class="form-select" @bind="selectedMunic">
+                    <option value="">@Strings.TodosLabel</option>
                 @foreach (var m in MunicOptions)
                 {
-                    <option value="@m">@m</option>
+                            <option value="@m">@m</option>
                 }
-            </select>
+                </select>
+            </div>
         </div>
-    </div>
 
-    <p class="mt-2">
-        Mostrando @TotalCentros centros
-    </p>
-    <table class="table table-striped table-bordered">
-        <thead>
-            <tr>
-                <th>Nombre</th>
-                <th>Dirección</th>
-                <th>Municipio</th>
-                <th>Teléfono</th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
+        <p class="mt-2">
+        @string.Format(Strings.MostrandoCentros, TotalCentros)
+        </p>
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>@Strings.NombreLabel</th>
+                    <th>@Strings.DireccionLabel</th>
+                    <th>@Strings.MunicipioLabel</th>
+                    <th>@Strings.TelefonoLabel</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
             @foreach (var c in CentrosPaginados)
             {
-                <tr>
-                    <td>@c.NOM</td>
-                    <td>@c.DOMI</td>
-                    <td>@c.DMUNIC</td>
-                    <td>@c.TEL1</td>
-                    <td>
-                        <button class="btn btn-sm btn-primary"
-                        @onclick="() => VerDetalle(c.CCEN)">
-                            Ver detalles
-                        </button>
-                        <button class="btn btn-sm btn-warning"
-                        @onclick="() => EditarCentro(c.CCEN)">
-                            Editar
-                        </button>
-                        <button class="btn btn-sm btn-danger"
-                        @onclick="() => EliminarCentro(c.CCEN)">
-                            Eliminar
-                        </button>
-                    </td>
-                </tr>
+                        <tr>
+                            <td>@c.NOM</td>
+                            <td>@c.DOMI</td>
+                            <td>@c.DMUNIC</td>
+                            <td>@c.TEL1</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary"
+                                        @onclick="() => VerDetalle(c.CCEN)">
+                            @Strings.VerDetallesBtn
+                                </button>
+                                <button class="btn btn-sm btn-warning"
+                                        @onclick="() => EditarCentro(c.CCEN)">
+                            @Strings.EditarBtn
+                                </button>
+                                <button class="btn btn-sm btn-danger"
+                                        @onclick="() => EliminarCentro(c.CCEN)">
+                            @Strings.EliminarBtn
+                                </button>
+                            </td>
+                        </tr>
             }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <div class="d-flex justify-content-center align-items-center mt-3">
-        <button class="btn btn-sm btn-secondary me-2"
-        @onclick="@(() => SetPage(1))"
-        disabled="@(currentPage == 1)">
-            Primero
-        </button>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+            <button class="btn btn-sm btn-secondary me-2"
+                    @onclick="@(() => SetPage(1))"
+                    disabled="@(currentPage == 1)">
+            @Strings.PrimeroBtn
+            </button>
 
-        <button class="btn btn-sm btn-secondary me-2"
-        @onclick="@(() => SetPage(currentPage - 1))"
-        disabled="@(currentPage == 1)">
-            Anterior
-        </button>
+            <button class="btn btn-sm btn-secondary me-2"
+                    @onclick="@(() => SetPage(currentPage - 1))"
+                    disabled="@(currentPage == 1)">
+            @Strings.AnteriorBtn
+            </button>
 
-        <span class="mx-3">
-            Página @currentPage de @TotalPages
-        </span>
+            <span class="mx-3">
+            @Strings.PaginaLabel @currentPage @Strings.DeLabel @TotalPages
+            </span>
 
-        <button class="btn btn-sm btn-secondary ms-2"
-        @onclick="@(() => SetPage(currentPage + 1))"
-        disabled="@(currentPage == TotalPages)">
-            Siguiente
-        </button>
+            <button class="btn btn-sm btn-secondary ms-2"
+                    @onclick="@(() => SetPage(currentPage + 1))"
+                    disabled="@(currentPage == TotalPages)">
+            @Strings.SiguienteBtn
+            </button>
 
-        <button class="btn btn-sm btn-secondary ms-2"
-        @onclick="@(() => SetPage(TotalPages))"
-        disabled="@(currentPage == TotalPages)">
-            Último
-        </button>
-    </div>
+            <button class="btn btn-sm btn-secondary ms-2"
+                    @onclick="@(() => SetPage(TotalPages))"
+                    disabled="@(currentPage == TotalPages)">
+            @Strings.UltimoBtn
+            </button>
+        </div>
 }
 
 @code {
@@ -252,5 +253,4 @@ else
         currentPage = 1;
         StateHasChanged();
     }
-
 }

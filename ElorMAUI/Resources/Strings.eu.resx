@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="FormTitleNew" xml:space="preserve">
+    <value>Zentro berria</value>
+  </data>
+  <data name="FormTitleEdit" xml:space="preserve">
+    <value>Zentroa editatu</value>
+  </data>
+  <data name="NombreLabel" xml:space="preserve">
+    <value>Izena</value>
+  </data>
+  <data name="NombreEuLabel" xml:space="preserve">
+    <value>Izena (Euskara)</value>
+  </data>
+  <data name="DireccionLabel" xml:space="preserve">
+    <value>Helbidea</value>
+  </data>
+  <data name="CodigoPostalLabel" xml:space="preserve">
+    <value>Posta Kodea</value>
+  </data>
+  <data name="MunicipioLabel" xml:space="preserve">
+    <value>Munizipioa</value>
+  </data>
+  <data name="MunicipioEuLabel" xml:space="preserve">
+    <value>Munizipioa (euskara)</value>
+  </data>
+  <data name="TelefonoLabel" xml:space="preserve">
+    <value>Telefonoa</value>
+  </data>
+  <data name="FaxLabel" xml:space="preserve">
+    <value>Fax-a</value>
+  </data>
+  <data name="EmailLabel" xml:space="preserve">
+    <value>Emaila</value>
+  </data>
+  <data name="PaginaWebLabel" xml:space="preserve">
+    <value>Weborria</value>
+  </data>
+  <data name="TerritorioLabel" xml:space="preserve">
+    <value>Lurraldea</value>
+  </data>
+  <data name="TerritorioEuLabel" xml:space="preserve">
+    <value>Lurraldea</value>
+  </data>
+  <data name="DependenciaLabel" xml:space="preserve">
+    <value>Dependentzia</value>
+  </data>
+  <data name="TipoCentroLabel" xml:space="preserve">
+    <value>Zentro mota</value>
+  </data>
+  <data name="TipoCentroEuLabel" xml:space="preserve">
+    <value>Zentro mota (Euskara)</value>
+  </data>
+  <data name="GeneroLabel" xml:space="preserve">
+    <value>Generoa</value>
+  </data>
+  <data name="GeneroCastLabel" xml:space="preserve">
+    <value>Generoa (gazteleraz)</value>
+  </data>
+  <data name="GeneroEuLabel" xml:space="preserve">
+    <value>Generoa (euskaraz)</value>
+  </data>
+  <data name="CoordXLabel" xml:space="preserve">
+    <value>Koordenada X</value>
+  </data>
+  <data name="CoordYLabel" xml:space="preserve">
+    <value>Koordenada Y</value>
+  </data>
+  <data name="LatitudLabel" xml:space="preserve">
+    <value>Latitudea</value>
+  </data>
+  <data name="LongitudLabel" xml:space="preserve">
+    <value>Longitudea</value>
+  </data>
+  <data name="GuardarBtn" xml:space="preserve">
+    <value>Gorde aldaketak</value>
+  </data>
+  <data name="CrearBtn" xml:space="preserve">
+    <value>Zentroa sortu</value>
+  </data>
+  <data name="CancelarBtn" xml:space="preserve">
+    <value>Ezeztatu</value>
+  </data>
+  <data name="ListaCentrosTitle" xml:space="preserve">
+    <value>Zentroen Zerrenda</value>
+  </data>
+  <data name="BuscarPlaceholder" xml:space="preserve">
+    <value>Bilatu izena, helbidea edo herriaren arabera...</value>
+  </data>
+  <data name="AnadirCentroBtn" xml:space="preserve">
+    <value>Zentro berria gehitu</value>
+  </data>
+  <data name="VerDetallesBtn" xml:space="preserve">
+    <value>Erakutsi xehetasunak</value>
+  </data>
+  <data name="EditarBtn" xml:space="preserve">
+    <value>Editatu</value>
+  </data>
+  <data name="EliminarBtn" xml:space="preserve">
+    <value>Kendu</value>
+  </data>
+  <data name="MostrandoCentros" xml:space="preserve">
+    <value>{0} zentroak erakusten</value>
+  </data>
+  <data name="PrimeroBtn" xml:space="preserve">
+    <value>Lehena</value>
+  </data>
+  <data name="AnteriorBtn" xml:space="preserve">
+    <value>Atzekoa</value>
+  </data>
+  <data name="SiguienteBtn" xml:space="preserve">
+    <value>Hurrengoa</value>
+  </data>
+  <data name="UltimoBtn" xml:space="preserve">
+    <value>Azkena</value>
+  </data>
+  <data name="PrevisionDiasLabel" xml:space="preserve">
+    <value>5 egunerako eguraldia</value>
+  </data>
+  <data name="TemperaturaActualLabel" xml:space="preserve">
+    <value>Oraingo tenperatura</value>
+  </data>
+  <data name="CenterNotFound" xml:space="preserve">
+    <value>Zentroa ez da aurkitzen</value>
+  </data>
+  <data name="CargandoLabel" xml:space="preserve">
+    <value>Kargatzen...</value>
+  </data>
+  <data name="TodosLabel" xml:space="preserve">
+    <value>Denak</value>
+  </data>
+  <data name="PaginaLabel" xml:space="preserve">
+    <value>Orrialdea</value>
+  </data>
+  <data name="DeLabel" xml:space="preserve">
+    <value>noren</value>
+  </data>
+</root>
