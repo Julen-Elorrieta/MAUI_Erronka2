@@ -258,4 +258,10 @@
   <data name="LoginContraseña" xml:space="preserve">
     <value>Pasahitza</value>
   </data>
+  <data name="EditarCentroTitle" xml:space="preserve">
+    <value>Zentroa Editatu</value>
+  </data>
+  <data name="NuevoCentroTitle" xml:space="preserve">
+    <value>Zentro Berria</value>
+  </data>
 </root>

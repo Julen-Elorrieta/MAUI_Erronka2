@@ -187,6 +187,15 @@ namespace ElorMAUI.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Editar Centro.
+        /// </summary>
+        public static string EditarCentroTitle {
+            get {
+                return ResourceManager.GetString("EditarCentroTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Eliminar.
         /// </summary>
         public static string EliminarBtn {
@@ -354,6 +363,15 @@ namespace ElorMAUI.Resources {
         public static string NombreLabel {
             get {
                 return ResourceManager.GetString("NombreLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nuevo Centro.
+        /// </summary>
+        public static string NuevoCentroTitle {
+            get {
+                return ResourceManager.GetString("NuevoCentroTitle", resourceCulture);
             }
         }
         

@@ -258,4 +258,10 @@
   <data name="LoginContraseña" xml:space="preserve">
     <value>Contraseña</value>
   </data>
+  <data name="EditarCentroTitle" xml:space="preserve">
+    <value>Editar Centro</value>
+  </data>
+  <data name="NuevoCentroTitle" xml:space="preserve">
+    <value>Nuevo Centro</value>
+  </data>
 </root>

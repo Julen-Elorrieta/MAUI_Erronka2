@@ -7,7 +7,7 @@
 
 <div class="formContainer shadow rounded p-4 bg-white mx-auto mt-4" style="max-width: 700px;">
     <h3 class="mb-4 text-center text-primary fw-bold">
-        @(IsEditMode ? "Editar centro" : "Nuevo centro")
+        @(IsEditMode ? Strings.EditarCentroTitle : Strings.NuevoCentroTitle)
     </h3>
 
     <EditForm Model="CentroModel" OnValidSubmit="GuardarCentro">
@@ -17,93 +17,94 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label>Nombre</label>
+                    <label>@Strings.NombreLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.NOM" />
                 </div>
                 <div class="mb-3">
-                    <label>Nombre (Euskera)</label>
+                    <label>@Strings.NombreEuLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.NOME" />
                 </div>
                 <div class="mb-3">
-                    <label>Dirección</label>
+                    <label>@Strings.DireccionLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DOMI" />
                 </div>
                 <div class="mb-3">
-                    <label>Código Postal</label>
+                    <label>@Strings.CodigoPostalLabel</label>
                     <InputNumber class="form-control" @bind-Value="CentroModel.CPOS" />
                 </div>
                 <div class="mb-3">
-                    <label>Municipio</label>
+                    <label>@Strings.MunicipioLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DMUNIC" />
                 </div>
                 <div class="mb-3">
-                    <label>Municipio (Euskera)</label>
+                    <label>@Strings.MunicipioEuLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DMUNIE" />
                 </div>
                 <div class="mb-3">
-                    <label>Teléfono</label>
+                    <label>@Strings.TelefonoLabel</label>
                     <InputNumber class="form-control" @bind-Value="CentroModel.TEL1" />
                 </div>
                 <div class="mb-3">
-                    <label>Fax</label>
+                    <label>@Strings.FaxLabel</label>
                     <InputNumber class="form-control" @bind-Value="CentroModel.TFAX" />
                 </div>
                 <div class="mb-3">
-                    <label>Email</label>
+                    <label>@Strings.EmailLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.EMAIL" />
                 </div>
                 <div class="mb-3">
-                    <label>Página web</label>
+                    <label>@Strings.PaginaWebLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.PAGINA" />
+                </div>
+                <div class="mb-3">
+                    <label>@Strings.LatitudLabel</label>
+                    <InputNumber class="form-control" @bind-Value="CentroModel.LATITUD" />
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="mb-3">
-                    <label>Territorio</label>
+                    <label>@Strings.TerritorioLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DTERRC" />
                 </div>
                 <div class="mb-3">
-                    <label>Territorio (Euskera)</label>
+                    <label>@Strings.TerritorioEuLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DTERRE" />
                 </div>
                 <div class="mb-3">
-                    <label>Dependencia</label>
+                    <label>@Strings.DependenciaLabel</label>
                     <InputNumber class="form-control" @bind-Value="CentroModel.DEPE" />
                 </div>
                 <div class="mb-3">
-                    <label>Tipo de centro</label>
+                    <label>@Strings.TipoCentroLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DTITUC" />
                 </div>
                 <div class="mb-3">
-                    <label>Tipo de centro (Euskera)</label>
+                    <label>@Strings.TipoCentroEuLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DTITUE" />
                 </div>
                 <div class="mb-3">
-                    <label>Género</label>
+                    <label>@Strings.GeneroLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.GENR" />
                 </div>
                 <div class="mb-3">
-                    <label>Género (Castellano)</label>
+                    <label>@Strings.GeneroCastLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DGENRC" />
                 </div>
                 <div class="mb-3">
-                    <label>Género (Euskera)</label>
+                    <label>@Strings.GeneroEuLabel</label>
                     <InputText class="form-control" @bind-Value="CentroModel.DGENRE" />
                 </div>
                 <div class="mb-3">
-                    <label>Coordenada X</label>
+                    <label>@Strings.CoordXLabel</label>
                     <InputNumber class="form-control" @bind-Value="CentroModel.COOR_X" />
                 </div>
                 <div class="mb-3">
-                    <label>Coordenada Y</label>
+                    <label>@Strings.CoordYLabel</label>
                     <InputNumber class="form-control" @bind-Value="CentroModel.COOR_Y" />
                 </div>
+
                 <div class="mb-3">
-                    <label>Latitud</label>
-                    <InputNumber class="form-control" @bind-Value="CentroModel.LATITUD" />
-                </div>
-                <div class="mb-3">
-                    <label>Longitud</label>
+                    <label>@Strings.LongitudLabel</label>
                     <InputNumber class="form-control" @bind-Value="CentroModel.LONGITUD" />
                 </div>
             </div>
@@ -111,10 +112,10 @@
 
         <div class="mt-4 text-center">
             <button type="submit" class="btn btn-primary px-4">
-                @(IsEditMode ? "Guardar cambios" : "Crear centro")
+                @(IsEditMode ? @Strings.GuardarBtn : @Strings.CrearBtn)
             </button>
             <button type="button" class="btn btn-secondary ms-2 px-4" @onclick="Volver">
-                Cancelar
+                @Strings.CancelarBtn
             </button>
         </div>
     </EditForm>
