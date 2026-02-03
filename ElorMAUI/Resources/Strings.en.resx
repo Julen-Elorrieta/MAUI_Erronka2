@@ -264,4 +264,7 @@
   <data name="NuevoCentroTitle" xml:space="preserve">
     <value>New Center</value>
   </data>
+  <data name="DetallesCentroLabel" xml:space="preserve">
+    <value>Center Details</value>
+  </data>
 </root>

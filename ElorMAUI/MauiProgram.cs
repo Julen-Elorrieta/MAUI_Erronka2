@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.DependencyInjection;
 using ElorMAUI.Services;
-using Microsoft.Maui.Controls.Hosting;
+using System.Globalization;
+
 
 namespace ElorMAUI
 {
@@ -35,6 +35,7 @@ namespace ElorMAUI
 #endif
 
             builder.Services.AddSingleton<IkastetxeService>();
+
 
             return builder.Build();
         }

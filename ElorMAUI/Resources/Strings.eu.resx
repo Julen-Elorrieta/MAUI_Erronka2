@@ -264,4 +264,7 @@
   <data name="NuevoCentroTitle" xml:space="preserve">
     <value>Zentro Berria</value>
   </data>
+  <data name="DetallesCentroLabel" xml:space="preserve">
+    <value>Zentroaren Xehetasunak</value>
+  </data>
 </root>

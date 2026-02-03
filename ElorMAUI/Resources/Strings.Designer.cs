@@ -169,6 +169,15 @@ namespace ElorMAUI.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Detalles del Centro.
+        /// </summary>
+        public static string DetallesCentroLabel {
+            get {
+                return ResourceManager.GetString("DetallesCentroLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Dirección.
         /// </summary>
         public static string DireccionLabel {

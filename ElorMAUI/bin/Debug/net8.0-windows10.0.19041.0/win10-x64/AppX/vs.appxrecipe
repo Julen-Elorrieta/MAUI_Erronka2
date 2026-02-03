@@ -29,7 +29,7 @@
     <AppXManifest Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2026-02-03T09:09:41.688</Modified>
+      <Modified>2026-02-03T10:41:40.456</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\ElorMAUI.dll">
       <PackagePath>ElorMAUI.dll</PackagePath>
-      <Modified>2026-02-03T09:09:41.243</Modified>
+      <Modified>2026-02-03T10:41:40.043</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>ElorMAUI.exe</PackagePath>
-      <Modified>2026-02-03T09:09:41.246</Modified>
+      <Modified>2026-02-03T10:41:40.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
@@ -319,11 +319,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\en\ElorMAUI.resources.dll">
       <PackagePath>en\ElorMAUI.resources.dll</PackagePath>
-      <Modified>2026-02-03T09:09:41.516</Modified>
+      <Modified>2026-02-03T10:41:40.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\Source\Repos\MAUI_Erronka2\ElorMAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\eu\ElorMAUI.resources.dll">
       <PackagePath>eu\ElorMAUI.resources.dll</PackagePath>
-      <Modified>2026-02-03T09:09:41.572</Modified>
+      <Modified>2026-02-03T10:41:40.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\in2dm3-d\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.54\lib\net8.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
