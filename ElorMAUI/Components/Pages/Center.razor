@@ -10,7 +10,6 @@
 @using System.Text.Json.Serialization
 @using Microsoft.Extensions.Localization
 @using ElorMAUI.Components.Shared
-@using ElorMAUI.Resources
 @layout ElorMAUI.Components.Layout.DetailLayout
 
 
@@ -42,9 +41,6 @@ else
     private List<PrevisionDia>? previsionDias;
     private string? errorMeteorologia;
 
-    // =======================
-    // MODELOS
-    // =======================
 
     public class PrevisionDia
     {
@@ -85,10 +81,6 @@ else
         [JsonPropertyName("temp_max")]
         public double TempMax { get; set; }
     }
-
-    // =======================
-    // CICLO DE VIDA
-    // =======================
 
     protected override async Task OnParametersSetAsync()
     {
@@ -144,28 +136,20 @@ else
         }
     }
 
-    // =======================
-    // METEOROLOGÍA
-    // =======================
-
     private async Task CargarDatosMeteorologicosAsync(double lat, double lon)
     {
         try
         {
-            // API key fija
             string apiKey = "5bb016c9dbe5ba87a024e8f47152e97f";
 
-            // URLs absolutas y siempre en español
             string urlActual = $"https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&units=metric&lang=es&appid={apiKey}";
             string urlPrevision = $"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&units=metric&lang=es&appid={apiKey}";
 
             using var http = new HttpClient();
 
-            // Obtener datos actuales
             var actual = await http.GetFromJsonAsync<OpenWeatherActual>(urlActual);
             temperaturaActual = actual?.Main.Temp;
 
-            // Obtener previsión
             var forecast = await http.GetFromJsonAsync<OpenWeatherForecast>(urlPrevision);
             if (forecast?.List != null)
             {

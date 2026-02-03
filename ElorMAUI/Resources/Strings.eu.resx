@@ -252,4 +252,10 @@
   <data name="DeLabel" xml:space="preserve">
     <value>noren</value>
   </data>
+  <data name="LoginCorreo" xml:space="preserve">
+    <value>Emaila</value>
+  </data>
+  <data name="LoginContraseña" xml:space="preserve">
+    <value>Pasahitza</value>
+  </data>
 </root>

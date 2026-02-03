@@ -151,7 +151,7 @@ namespace ElorMAUI.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a .
+        ///   Busca una cadena traducida similar a de.
         /// </summary>
         public static string DeLabel {
             get {
@@ -286,6 +286,24 @@ namespace ElorMAUI.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Contraseña.
+        /// </summary>
+        public static string LoginContraseña {
+            get {
+                return ResourceManager.GetString("LoginContraseña", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Correo.
+        /// </summary>
+        public static string LoginCorreo {
+            get {
+                return ResourceManager.GetString("LoginCorreo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Longitud.
         /// </summary>
         public static string LongitudLabel {
@@ -340,7 +358,7 @@ namespace ElorMAUI.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a .
+        ///   Busca una cadena traducida similar a Página.
         /// </summary>
         public static string PaginaLabel {
             get {

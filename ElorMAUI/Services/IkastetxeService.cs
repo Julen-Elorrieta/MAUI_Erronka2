@@ -16,7 +16,7 @@ namespace ElorMAUI.Services
         public async Task LoadCentrosAsync()
         {
             if (Centros != null && Centros.Any())
-                return; // Ya cargados
+                return;
 
             try
             {

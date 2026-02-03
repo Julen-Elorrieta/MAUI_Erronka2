@@ -35,8 +35,5 @@ namespace ElorMAUI.Components.Model
         public double? LATITUD { get; set; }
         public double? LONGITUD { get; set; }
     }
-
-
-
 }
 

@@ -21,13 +21,11 @@ namespace ElorMAUI
 
             var backendUrl = "http://localhost:8080";
 
-            // Cliente con nombre
             builder.Services.AddHttpClient("BackendApi", client =>
             {
                 client.BaseAddress = new Uri(backendUrl);
             });
 
-            // Cliente predeterminado para inyección directa
             builder.Services.AddScoped(sp =>
                 sp.GetRequiredService<IHttpClientFactory>().CreateClient("BackendApi"));
 
@@ -36,7 +34,6 @@ namespace ElorMAUI
             builder.Logging.AddDebug();
 #endif
 
-            // Servicios
             builder.Services.AddSingleton<IkastetxeService>();
 
             return builder.Build();

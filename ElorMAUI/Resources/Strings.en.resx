@@ -252,4 +252,10 @@
   <data name="DeLabel" xml:space="preserve">
     <value>from</value>
   </data>
+  <data name="LoginCorreo" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="LoginContraseña" xml:space="preserve">
+    <value>Password</value>
+  </data>
 </root>

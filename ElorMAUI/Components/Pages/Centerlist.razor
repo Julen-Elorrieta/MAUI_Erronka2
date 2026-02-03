@@ -2,7 +2,7 @@
 @inject NavigationManager Navigation
 @inject Services.IkastetxeService servicio
 @using ElorMAUI.Components.Model
-@using ElorMAUI.Resources
+
 
 <h1>@Strings.ListaCentrosTitle</h1>
 
@@ -12,20 +12,22 @@
 }
 else
 {
-        <div class="row mb-3">
-            <div class="col-12 col-md-6 mb-2">
-                <input class="form-control"
-                       type="text"
-                       placeholder="@Strings.BuscarPlaceholder"
-                       @oninput="OnSearchTextChanged"
-                       value="@searchText" />
-            </div>
-            <div>
-                <button class="btn btn-success" @onclick="NuevoCentro">
-                @Strings.AnadirCentroBtn
-                </button>
-            </div>
+    <div class="mb-3">
+        <button class="btn btn-success" @onclick="NuevoCentro">
+            @Strings.AnadirCentroBtn
+        </button>
+    </div>
+
+
+    <div class="row mb-3">
+        <div class="d-flex justify-content-center">
+            <input class="form-control w-50"
+                   type="text"
+                   placeholder="@Strings.BuscarPlaceholder"
+                   @oninput="OnSearchTextChanged"
+                   value="@searchText" />
         </div>
+    </div>
 
         <div class="row mb-3">
             <div class="col">
@@ -81,7 +83,7 @@ else
                             <td>@c.DOMI</td>
                             <td>@c.DMUNIC</td>
                             <td>@c.TEL1</td>
-                            <td>
+                            <td class="text-center">
                                 <button class="btn btn-sm btn-primary"
                                         @onclick="() => VerDetalle(c.CCEN)">
                             @Strings.VerDetallesBtn
@@ -150,7 +152,6 @@ else
         currentPage = 1;
     }
 
-    // Opciones para los selectores encadenados
     private IEnumerable<string> TitucOptions =>
         servicio.Centros
             .Select(c => c.DTITUC)
@@ -177,7 +178,6 @@ else
             .Distinct()
             .OrderBy(s => s);
 
-    // Lista filtrada según los selectores
     private IEnumerable<Centro> CentrosFiltrados =>
         servicio.Centros
             .Where(c =>
@@ -191,7 +191,6 @@ else
                 )
             );
 
-    // Paginación sobre la lista filtrada
     private IEnumerable<Centro> CentrosPaginados =>
         CentrosFiltrados.Skip((currentPage - 1) * pageSize).Take(pageSize);
 
@@ -210,7 +209,6 @@ else
             Navigation.NavigateTo($"/center/{ccen.Value}");
     }
 
-    // Métodos para limpiar selects dependientes y reiniciar página
     private void OnTitucChanged(ChangeEventArgs e)
     {
         selectedTituc = e.Value?.ToString();

@@ -247,9 +247,15 @@
     <value>Todos</value>
   </data>
   <data name="PaginaLabel" xml:space="preserve">
-    <value />
+    <value>Página</value>
   </data>
   <data name="DeLabel" xml:space="preserve">
-    <value />
+    <value>de</value>
+  </data>
+  <data name="LoginCorreo" xml:space="preserve">
+    <value>Correo</value>
+  </data>
+  <data name="LoginContraseña" xml:space="preserve">
+    <value>Contraseña</value>
   </data>
 </root>
