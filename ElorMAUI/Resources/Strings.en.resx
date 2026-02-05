@@ -267,4 +267,16 @@
   <data name="DetallesCentroLabel" xml:space="preserve">
     <value>Center Details</value>
   </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DialogTitle" xml:space="preserve">
+    <value>Confirm action</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Are you sure you want to continue?</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
 </root>

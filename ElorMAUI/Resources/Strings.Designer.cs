@@ -97,6 +97,15 @@ namespace ElorMAUI.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Cancelar.
+        /// </summary>
+        public static string CancelText {
+            get {
+                return ResourceManager.GetString("CancelText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Cargando....
         /// </summary>
         public static string CargandoLabel {
@@ -120,6 +129,15 @@ namespace ElorMAUI.Resources {
         public static string CodigoPostalLabel {
             get {
                 return ResourceManager.GetString("CodigoPostalLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Eliminar.
+        /// </summary>
+        public static string ConfirmText {
+            get {
+                return ResourceManager.GetString("ConfirmText", resourceCulture);
             }
         }
         
@@ -174,6 +192,15 @@ namespace ElorMAUI.Resources {
         public static string DetallesCentroLabel {
             get {
                 return ResourceManager.GetString("DetallesCentroLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Confirmar acción.
+        /// </summary>
+        public static string DialogTitle {
+            get {
+                return ResourceManager.GetString("DialogTitle", resourceCulture);
             }
         }
         
@@ -327,6 +354,15 @@ namespace ElorMAUI.Resources {
         public static string LongitudLabel {
             get {
                 return ResourceManager.GetString("LongitudLabel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ¿Seguro que quieres continuar?.
+        /// </summary>
+        public static string Message {
+            get {
+                return ResourceManager.GetString("Message", resourceCulture);
             }
         }
         

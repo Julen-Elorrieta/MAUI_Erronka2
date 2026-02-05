@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElorMAUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+76e43be222404dbaf77602cab4b8860bbca994e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+3ddee89f05faa3cc52ad621c61d537f6b081e3c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElorMAUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElorMAUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

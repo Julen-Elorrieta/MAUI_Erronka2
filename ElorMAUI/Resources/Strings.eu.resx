@@ -267,4 +267,16 @@
   <data name="DetallesCentroLabel" xml:space="preserve">
     <value>Zentroaren Xehetasunak</value>
   </data>
+  <data name="ConfirmText" xml:space="preserve">
+    <value>Ezabatu</value>
+  </data>
+  <data name="DialogTitle" xml:space="preserve">
+    <value>Baiestatu akzioa</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Ziur zaude aurrera egiteko?</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Ezeztatu</value>
+  </data>
 </root>

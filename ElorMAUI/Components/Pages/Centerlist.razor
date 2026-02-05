@@ -93,8 +93,8 @@ else
                             @Strings.EditarBtn
                                 </button>
                                 <button class="btn btn-sm btn-danger"
-                                        @onclick="() => EliminarCentro(c.CCEN)">
-                            @Strings.EliminarBtn
+                                        @onclick="() => SolicitarEliminarCentro(c.CCEN)">
+                                    @Strings.EliminarBtn
                                 </button>
                             </td>
                         </tr>
@@ -131,6 +131,10 @@ else
             @Strings.UltimoBtn
             </button>
         </div>
+
+        <ConfirmDialog Visible="showConfirmDialog"
+                   OnConfirm="ConfirmarEliminarCentro"
+                   OnCancel="CancelarEliminarCentro" />
 }
 
 @code {
@@ -250,5 +254,33 @@ else
         servicio.LoadCentrosAsync();
         currentPage = 1;
         StateHasChanged();
+    }
+
+    private bool showConfirmDialog = false;
+    private int? centroAEliminar;
+
+    private void SolicitarEliminarCentro(int? ccen)
+    {
+        centroAEliminar = ccen;
+        showConfirmDialog = true;
+    }
+
+    private async Task ConfirmarEliminarCentro()
+    {
+        if (centroAEliminar.HasValue)
+        {
+            servicio.EliminarCentro(centroAEliminar.Value);
+            await servicio.LoadCentrosAsync();
+            currentPage = 1;
+            StateHasChanged();
+        }
+        showConfirmDialog = false;
+        centroAEliminar = null;
+    }
+
+    private void CancelarEliminarCentro()
+    {
+        showConfirmDialog = false;
+        centroAEliminar = null;
     }
 }

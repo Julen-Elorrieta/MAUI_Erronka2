@@ -1,0 +1,29 @@
+@if (Visible)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background:rgba(0,0,0,0.3);">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@Title</h5>
+                </div>
+                <div class="modal-body">
+                    <p>@Message</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" @onclick="OnCancel">@CancelText</button>
+                    <button class="btn btn-danger" @onclick="OnConfirm">@ConfirmText</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    [Parameter] public bool Visible { get; set; }
+    [Parameter] public string Title { get; set; } = Strings.DialogTitle;
+    [Parameter] public string Message { get; set; } = Strings.Message;
+    [Parameter] public string ConfirmText { get; set; } = Strings.ConfirmText;
+    [Parameter] public string CancelText { get; set; } = Strings.CancelText;
+    [Parameter] public EventCallback OnConfirm { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+}
