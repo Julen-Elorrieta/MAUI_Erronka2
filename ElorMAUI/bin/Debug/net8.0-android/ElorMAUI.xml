@@ -40,6 +40,11 @@
               Busca una cadena traducida similar a Cancelar.
             </summary>
         </member>
+        <member name="P:ElorMAUI.Resources.Strings.CancelText">
+            <summary>
+              Busca una cadena traducida similar a Cancelar.
+            </summary>
+        </member>
         <member name="P:ElorMAUI.Resources.Strings.CargandoLabel">
             <summary>
               Busca una cadena traducida similar a Cargando....
@@ -53,6 +58,11 @@
         <member name="P:ElorMAUI.Resources.Strings.CodigoPostalLabel">
             <summary>
               Busca una cadena traducida similar a Código Postal.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.ConfirmText">
+            <summary>
+              Busca una cadena traducida similar a Eliminar.
             </summary>
         </member>
         <member name="P:ElorMAUI.Resources.Strings.CoordXLabel">
@@ -72,12 +82,22 @@
         </member>
         <member name="P:ElorMAUI.Resources.Strings.DeLabel">
             <summary>
-              Busca una cadena traducida similar a .
+              Busca una cadena traducida similar a de.
             </summary>
         </member>
         <member name="P:ElorMAUI.Resources.Strings.DependenciaLabel">
             <summary>
               Busca una cadena traducida similar a Dependencia.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.DetallesCentroLabel">
+            <summary>
+              Busca una cadena traducida similar a Detalles del Centro.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.DialogTitle">
+            <summary>
+              Busca una cadena traducida similar a Confirmar acción.
             </summary>
         </member>
         <member name="P:ElorMAUI.Resources.Strings.DireccionLabel">
@@ -88,6 +108,11 @@
         <member name="P:ElorMAUI.Resources.Strings.EditarBtn">
             <summary>
               Busca una cadena traducida similar a Editar.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.EditarCentroTitle">
+            <summary>
+              Busca una cadena traducida similar a Editar Centro.
             </summary>
         </member>
         <member name="P:ElorMAUI.Resources.Strings.EliminarBtn">
@@ -145,9 +170,24 @@
               Busca una cadena traducida similar a Lista de Centros.
             </summary>
         </member>
+        <member name="P:ElorMAUI.Resources.Strings.LoginContraseña">
+            <summary>
+              Busca una cadena traducida similar a Contraseña.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.LoginCorreo">
+            <summary>
+              Busca una cadena traducida similar a Correo.
+            </summary>
+        </member>
         <member name="P:ElorMAUI.Resources.Strings.LongitudLabel">
             <summary>
               Busca una cadena traducida similar a Longitud.
+            </summary>
+        </member>
+        <member name="P:ElorMAUI.Resources.Strings.Message">
+            <summary>
+              Busca una cadena traducida similar a ¿Seguro que quieres continuar?.
             </summary>
         </member>
         <member name="P:ElorMAUI.Resources.Strings.MostrandoCentros">
@@ -175,9 +215,14 @@
               Busca una cadena traducida similar a Nombre.
             </summary>
         </member>
+        <member name="P:ElorMAUI.Resources.Strings.NuevoCentroTitle">
+            <summary>
+              Busca una cadena traducida similar a Nuevo Centro.
+            </summary>
+        </member>
         <member name="P:ElorMAUI.Resources.Strings.PaginaLabel">
             <summary>
-              Busca una cadena traducida similar a .
+              Busca una cadena traducida similar a Página.
             </summary>
         </member>
         <member name="P:ElorMAUI.Resources.Strings.PaginaWebLabel">

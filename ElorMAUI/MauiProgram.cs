@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 using ElorMAUI.Services;
-using System.Globalization;
+
 
 
 namespace ElorMAUI
